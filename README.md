@@ -1,12 +1,9 @@
 # TeachingManagement_back-end
 
 我的毕业设计，基于Egg.js的教师工作室教学管理平台后端
+showcase using typescript && egg
 
 ## QuickStart
-
-<!-- add docs here for user -->
-
-see [egg docs][egg] for more detail.
 
 ### Development
 
@@ -16,18 +13,22 @@ $ npm run dev
 $ open http://localhost:7001/
 ```
 
+Don't tsc compile at development mode, if you had run `tsc` then you need to `npm run clean` before `npm run dev`.
+
 ### Deploy
 
 ```bash
+$ npm run tsc
 $ npm start
-$ npm stop
 ```
 
-### npm scripts
+### Npm Scripts
 
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
+- Use `npm run lint` to check code style
+- Use `npm test` to run unit test
+- se `npm run clean` to clean compiled js at development mode once
 
+### Requirement
 
-[egg]: https://eggjs.org
+- Node.js 8.x
+- Typescript 2.8+
