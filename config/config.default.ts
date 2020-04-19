@@ -15,6 +15,11 @@ export default (appInfo: EggAppInfo) => {
     database: 'windhunter',
     dialect: 'mysql',
     password: 'Liefeng123',
+    // 时区设置
+    dialectOptions: {
+      useUTC: false, // for reading from database
+    },
+    timezone: '+8:00', // for writing to database
   };
   config.mysql = {
     // 单数据库信息配置
@@ -29,6 +34,11 @@ export default (appInfo: EggAppInfo) => {
       password: 'Liefeng123',
       // 数据库名
       database: 'windhunter',
+    },
+  };
+  config.security = {
+    csrf: {
+      ignore: [ '/api' ],
     },
   };
 
