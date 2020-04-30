@@ -10,6 +10,14 @@ const plugin: EggPlugin = {
     enable: true,
     package: 'egg-sequelize-ts',
   },
+  jwt: {
+    enable: true,
+    package: 'egg-jwt',
+  },
+  cors: {
+    enable: true,
+    package: 'egg-cors',
+  },
 };
 
 export default plugin;

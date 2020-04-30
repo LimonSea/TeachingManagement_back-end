@@ -40,6 +40,16 @@ export class User extends Model<User> {
   mobile: string;
 
   @Column({
+    comment: '密码',
+  })
+  password: string;
+
+  @Column({
+    comment: '头像',
+  })
+  avatar: string;
+
+  @Column({
     comment: '用户权限',
     field: 'current_authority',
   })
