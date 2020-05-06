@@ -56,6 +56,17 @@ export class User extends Model<User> {
   currentAuthority: string;
 
   @Column({
+    comment: '个性签名',
+  })
+  signature: string;
+
+  @Column({
+    comment: '工作室id',
+    field: 'group_id',
+  })
+  groupId: number;
+
+  @Column({
     field: 'created_at',
   })
   createdAt: Date;

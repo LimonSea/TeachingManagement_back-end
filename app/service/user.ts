@@ -54,11 +54,12 @@ export default class User extends Service {
       console.log(mobile, captcha);
       result = true;
     }
-    if (!result) return { ...Code.ERROR };
+    if (!result) return { ...Code.ERROR, msg: '用户名或密码错误！' };
     // 生成token
     const token = app.jwt.sign({
       id: result.id, // 需要存储的 token 数据
       currentAuthority: result.currentAuthority,
+      groupId: result.groupId,
     }, app.config.jwt.secret, {
       expiresIn: 60 * 60, // 过期时间，当前为1小时
     });
@@ -79,6 +80,7 @@ export default class User extends Service {
     // }
     return { ...Code.SUCCESS, user: ctx.state.user };
   }
+
   // 获取当前用户
   async currentUser() {
     const { ctx } = this;
@@ -88,6 +90,12 @@ export default class User extends Service {
         id: ctx.state.user.id,
       },
     });
-    return { ...Code.SUCCESS, ...result };
+    const group = await ctx.model.Group.findOne({
+      where: {
+        id: ctx.state.user.groupId,
+      },
+    });
+    delete result?.password;
+    return { ...Code.SUCCESS, ...result, group: group?.name };
   }
 }

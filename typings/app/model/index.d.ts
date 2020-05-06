@@ -2,10 +2,12 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
+import ExportGroup from '../../../app/model/group';
 import ExportUser from '../../../app/model/user';
 
 declare module 'egg' {
   interface IModel {
+    Group: ReturnType<typeof ExportGroup>;
     User: ReturnType<typeof ExportUser>;
   }
 }
