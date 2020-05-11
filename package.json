@@ -19,8 +19,7 @@
     "ci": "npm run lint && npm run cov && npm run tsc",
     "autod": "autod",
     "lint": "eslint . --ext .ts",
-    "clean": "ets clean",
-    "sequelize-cli-ts": "node -r ts-node/register ./node_modules/sequelize-cli/lib/sequelize"
+    "clean": "ets clean"
   },
   "dependencies": {
     "egg": "^2.6.1",
@@ -29,7 +28,6 @@
     "egg-mysql": "^3.0.0",
     "egg-scripts": "^2.6.0",
     "egg-sequelize": "^5.2.1",
-    "egg-sequelize-ts": "^0.2.3-0",
     "mysql2": "^2.1.0"
   },
   "devDependencies": {

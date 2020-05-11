@@ -1,33 +1,18 @@
+import { Application } from 'egg';
 
-import { AutoIncrement, Column, DataType, Model, PrimaryKey, Table } from 'sequelize-typescript';
-@Table({
-  modelName: 'group',
-  timestamps: true,
-})
-export class Group extends Model<Group> {
+module.exports = (app: Application) => {
+  const { STRING, INTEGER, DATE } = app.Sequelize;
 
-  @PrimaryKey
-  @AutoIncrement
-  @Column({
-    type: DataType.INTEGER(11),
-    comment: '工作室ID',
-  })
-  id: number;
+  const Group = app.model.define('groups', {
+    id: { type: INTEGER, primaryKey: true, autoIncrement: true },
+    name: { type: STRING(30), allowNull: false, defaultValue: 'normal' },
+    createdAt: { type: DATE, field: 'created_at' },
+    updatedAt: { type: DATE, field: 'updated_at' },
+  });
 
-  @Column({
-    comment: '工作室名称',
-  })
-  name: string;
+  (Group as any).associate = function(): void {
+    app.model.Group.hasMany(app.model.User, { foreignKey: 'groupId' });
+  };
 
-  @Column({
-    field: 'created_at',
-  })
-  createdAt: Date;
-
-  @Column({
-    field: 'updated_at',
-  })
-  updatedAt: Date;
-}
-
-export default () => Group;
+  return Group;
+};

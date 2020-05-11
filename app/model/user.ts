@@ -1,80 +1,37 @@
+import { Application } from 'egg';
 
-import { AutoIncrement, Column, DataType, Model, PrimaryKey, Table } from 'sequelize-typescript';
-@Table({
-  modelName: 'user',
-  timestamps: true,
-})
-export class User extends Model<User> {
+module.exports = (app: Application) => {
+  const { STRING, INTEGER, DATE } = app.Sequelize;
 
-  @PrimaryKey
-  @AutoIncrement
-  @Column({
-    type: DataType.INTEGER(11),
-    comment: '用户ID',
-  })
-  id: number;
+  const User = app.model.define('users', {
+    id: { type: INTEGER, primaryKey: true, autoIncrement: true },
+    name: { type: STRING(30), allowNull: false, defaultValue: 'normal' },
+    sex: { type: INTEGER, allowNull: false, defaultValue: 0 },
+    age: { type: INTEGER, allowNull: false, defaultValue: 0 },
+    mobile: { type: STRING(16), allowNull: false, defaultValue: 'normal' },
+    password: { type: STRING(32), allowNull: false, defaultValue: 'normal' },
+    avatar: { type: STRING(256), allowNull: false, defaultValue: 'normal' },
+    mail: { type: STRING(64), allowNull: false, defaultValue: 'normal' },
+    currentAuthority: { type: STRING(16), allowNull: false, defaultValue: 'user', field: 'current_authority' },
+    signature: { type: STRING(32), allowNull: true },
+    groupId: {
+      type: INTEGER,
+      allowNull: true,
+      defaultValue: 0,
+      field: 'group_id',
+      references: {
+        model: 'group',
+        key: 'id',
+      },
+    },
+    createdAt: { type: DATE, field: 'created_at' },
+    updatedAt: { type: DATE, field: 'updated_at' },
+  });
 
-  @Column({
-    comment: '用户姓名',
-  })
-  name: string;
+  (User as any).associate = function(): void {
+    app.model.User.belongsTo(app.model.Group, { foreignKey: 'groupId', targetKey: 'id' });
+    app.model.User.hasMany(app.model.Article, { foreignKey: 'authorId' });
+  };
 
-  @Column({
-    comment: '用户性别',
-  })
-  sex: number;
-
-  @Column({
-    comment: '用户年龄',
-  })
-  age: number;
-
-  @Column({
-    comment: '用户邮箱',
-  })
-  mail: string;
-
-  @Column({
-    comment: '用户手机号码',
-  })
-  mobile: string;
-
-  @Column({
-    comment: '密码',
-  })
-  password: string;
-
-  @Column({
-    comment: '头像',
-  })
-  avatar: string;
-
-  @Column({
-    comment: '用户权限',
-    field: 'current_authority',
-  })
-  currentAuthority: string;
-
-  @Column({
-    comment: '个性签名',
-  })
-  signature: string;
-
-  @Column({
-    comment: '工作室id',
-    field: 'group_id',
-  })
-  groupId: number;
-
-  @Column({
-    field: 'created_at',
-  })
-  createdAt: Date;
-
-  @Column({
-    field: 'updated_at',
-  })
-  updatedAt: Date;
-}
-
-export default () => User;
+  return User;
+};

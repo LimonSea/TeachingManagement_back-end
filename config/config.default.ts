@@ -15,7 +15,7 @@ export default (appInfo: EggAppInfo) => {
     database: 'windhunter',
     dialect: 'mysql',
     password: 'Liefeng123',
-    query: { raw: true },
+    // query: { raw: true },
     // 时区设置
     dialectOptions: {
       useUTC: false, // for reading from database

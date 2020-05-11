@@ -8,6 +8,7 @@ export default class User extends Service {
     const result: any = await ctx.model.User.findAll({});
     return { ...Code.SUCCESS, ...result };
   }
+
   // 注册
   async create() {
     const { ctx, app } = this;
@@ -19,13 +20,12 @@ export default class User extends Service {
     const name = `用户${mobile.substring(mobile.length - 4)}`;
     // 密码 Hmac 加密存储
     password = createHmac('md5', app.config.pwdSecret).update(password).digest('hex');
+    // 存储数据库
     const result = await ctx.model.User.create({ name, mail, password, mobile, avatar });
-    console.log(result.toJSON());
-    if (result.toJSON()) {
-      return { ...Code.SUCCESS, ...result.toJSON() }; // TODO:之后删掉result.toJSON()
-    }
+    if (result.toJSON()) return { ...Code.SUCCESS };
     return { ...Code.ERROR };
   }
+
   // 获取验证码
   async getCaptcha() {
     // const { ctx } = this;
@@ -35,6 +35,7 @@ export default class User extends Service {
     //   data: result,
     // });
   }
+
   // 登录
   async login() {
     const { ctx, app } = this;
@@ -61,12 +62,13 @@ export default class User extends Service {
       currentAuthority: result.currentAuthority,
       groupId: result.groupId,
     }, app.config.jwt.secret, {
-      expiresIn: 60 * 60, // 过期时间，当前为1小时
+      expiresIn: 60 * 240, // 过期时间，当前为4小时
     });
     // 保存到redis
     // ctx.redis.set(result.id, token);
     return { ...Code.SUCCESS, token, type, currentAuthority: result.currentAuthority };
   }
+
   // 测试token的
   async admin() {
     const { ctx } = this;
@@ -84,18 +86,16 @@ export default class User extends Service {
   // 获取当前用户
   async currentUser() {
     const { ctx } = this;
-    console.log('获取当前用户：', ctx.state.user.id);
     const result = await ctx.model.User.findOne({
+      include: {
+        attributes: [ 'name' ],
+        model: ctx.model.Group,
+      },
       where: {
         id: ctx.state.user.id,
       },
     });
-    const group = await ctx.model.Group.findOne({
-      where: {
-        id: ctx.state.user.groupId,
-      },
-    });
     delete result?.password;
-    return { ...Code.SUCCESS, ...result, group: group?.name };
+    return { ...Code.SUCCESS, ...result.toJSON() };
   }
 }

@@ -1,4 +1,4 @@
-// This file is created by egg-ts-helper@1.25.7
+// This file is created by egg-ts-helper@1.25.8
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
@@ -15,7 +15,7 @@ import 'egg-static';
 import 'egg-jsonp';
 import 'egg-view';
 import 'egg-mysql';
-import 'egg-sequelize-ts';
+import 'egg-sequelize';
 import 'egg-jwt';
 import 'egg-cors';
 import { EggPluginItem } from 'egg';
