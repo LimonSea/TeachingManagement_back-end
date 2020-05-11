@@ -83,19 +83,46 @@ export default class User extends Service {
     return { ...Code.SUCCESS, user: ctx.state.user };
   }
 
-  // 获取当前用户
+  // 获取当前用户，使用token
   async currentUser() {
-    const { ctx } = this;
+    const { ctx, app } = this;
     const result = await ctx.model.User.findOne({
+      attributes: {
+        include: [
+          [ app.Sequelize.col('group.name'), 'groupName' ],
+        ],
+        exclude: [ 'password' ],
+      },
       include: {
-        attributes: [ 'name' ],
+        attributes: [],
         model: ctx.model.Group,
       },
       where: {
         id: ctx.state.user.id,
       },
     });
-    delete result?.password;
+    return { ...Code.SUCCESS, ...result.toJSON() };
+  }
+
+  // 获取主页的用户数据
+  async userCenterInfo() {
+    const { ctx, app } = this;
+    const { id } = ctx.query;
+    const result = await ctx.model.User.findOne({
+      attributes: {
+        include: [
+          [ app.Sequelize.col('group.name'), 'groupName' ],
+        ],
+        exclude: [ 'password' ],
+      },
+      include: {
+        attributes: [],
+        model: ctx.model.Group,
+      },
+      where: {
+        id,
+      },
+    });
     return { ...Code.SUCCESS, ...result.toJSON() };
   }
 }

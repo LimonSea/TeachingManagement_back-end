@@ -11,6 +11,7 @@ export default (app: Application) => {
   router.post('/user/login/account', controller.user.login);
   router.post('/user/admin', jwt, controller.user.admin); // 验证token
   router.get('/user/currentUser', jwt, controller.user.currentUser);
+  router.get('/user/userCenterInfo', controller.user.userCenterInfo);
 
   // 文章
   router.post('/writing/submitArticle', jwt, controller.writing.createArticle);
