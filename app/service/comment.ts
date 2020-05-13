@@ -1,23 +1,38 @@
 import { Service } from 'egg';
 import { Code } from '../util/util';
 
-export default class Article extends Service {
-  // 发布文章
+export default class Comment extends Service {
+  // 发布评论
   async create() {
-    const { ctx } = this;
-    const { title, desc, content } = ctx.request.body;
+    const { ctx, app } = this;
+    const { Sequelize: Seq } = app;
+    const { content, associateId, associateType } = ctx.request.body;
     const { id } = ctx.state.user;
-    const result = await ctx.model.Article.create({ title, desc, content, authorId: id });
-    if (result.toJSON()) return { ...Code.SUCCESS };
+    const result = await ctx.model.Comment.create({ content, associateId, associateType, authorId: id });
+    const comment = await ctx.model.Comment.findOne({
+      attributes: {
+        include: [
+          [ Seq.col('user.name'), 'owner' ],
+          [ Seq.col('user.avatar'), 'avatar' ],
+        ],
+      },
+      include: {
+        attributes: [],
+        model: ctx.model.User,
+      },
+      where: {
+        id: result.toJSON().id,
+      },
+    });
+    if (comment) return { ...Code.SUCCESS, comment };
     return { ...Code.ERROR };
   }
 
-  // 查看文章列表
+  // 查看评论列表
   async search() {
     let result: any;
     const { ctx, app } = this;
     const { Sequelize: Seq } = app;
-    // const { id = ctx.state.user, keyword = null, type = null } = ctx.query; TODO:增加关键词和类型搜索
     const { authorId, currentPage = 1, count = 10 } = ctx.query;
     if (authorId) {
       result = await ctx.model.Article.findAndCountAll({
@@ -47,7 +62,7 @@ export default class Article extends Service {
     return { ...Code.SUCCESS, data: result.rows, totalCount: result.count };
   }
 
-  // 查看文章
+  // 查看评论
   async show() {
     const { ctx, app } = this;
     const { Sequelize: Seq } = app;
@@ -73,23 +88,7 @@ export default class Article extends Service {
         id,
       },
     });
-    const commentList = await ctx.model.Comment.findAndCountAll({
-      attributes: {
-        include: [
-          [ Seq.col('user.name'), 'owner' ],
-          [ Seq.col('user.avatar'), 'avatar' ],
-        ],
-      },
-      include: {
-        attributes: [],
-        model: ctx.model.User,
-      },
-      where: {
-        associateId: id,
-        associateType: 'article',
-      },
-    });
-    return { ...Code.SUCCESS, ...result.toJSON(), commentsCount: commentList.count, comments: commentList.rows };
+    return { ...Code.SUCCESS, ...result.toJSON() };
   }
 }
 

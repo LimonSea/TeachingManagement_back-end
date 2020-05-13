@@ -31,6 +31,7 @@ module.exports = (app: Application) => {
   (User as any).associate = function(): void {
     app.model.User.belongsTo(app.model.Group, { foreignKey: 'groupId', targetKey: 'id' });
     app.model.User.hasMany(app.model.Article, { foreignKey: 'authorId' });
+    app.model.User.hasMany(app.model.Comment, { foreignKey: 'authorId' });
   };
 
   return User;

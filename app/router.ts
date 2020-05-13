@@ -16,4 +16,8 @@ export default (app: Application) => {
   // 文章
   router.post('/writing/submitArticle', jwt, controller.writing.createArticle);
   router.get('/writing/searchArticle', controller.writing.searchArticle);
+  router.get('/writing/showArticle', controller.writing.showArticle);
+
+  // 评论
+  router.post('/writing/submitComment', jwt, controller.writing.createComment);
 };
