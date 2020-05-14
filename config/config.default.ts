@@ -23,6 +23,9 @@ export default (appInfo: EggAppInfo) => {
       collate: 'utf8mb4_unicode_ci',
     },
     timezone: '+8:00', // for writing to database
+    define: {
+      freezeTableName: true,
+    },
   };
   config.mysql = {
     // 单数据库信息配置

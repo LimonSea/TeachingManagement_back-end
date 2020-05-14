@@ -3,7 +3,7 @@ import { Application } from 'egg';
 module.exports = (app: Application) => {
   const { STRING, INTEGER, DATE, TEXT } = app.Sequelize;
 
-  const Comment = app.model.define('comments', {
+  const Comment = app.model.define('comment', {
     id: { type: INTEGER, primaryKey: true, autoIncrement: true },
     authorId: {
       type: INTEGER,

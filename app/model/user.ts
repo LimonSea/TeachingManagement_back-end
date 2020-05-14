@@ -3,7 +3,7 @@ import { Application } from 'egg';
 module.exports = (app: Application) => {
   const { STRING, INTEGER, DATE } = app.Sequelize;
 
-  const User = app.model.define('users', {
+  const User = app.model.define('user', {
     id: { type: INTEGER, primaryKey: true, autoIncrement: true },
     name: { type: STRING(30), allowNull: false, defaultValue: 'normal' },
     sex: { type: INTEGER, allowNull: false, defaultValue: 0 },
@@ -29,9 +29,17 @@ module.exports = (app: Application) => {
   });
 
   (User as any).associate = function(): void {
-    app.model.User.belongsTo(app.model.Group, { foreignKey: 'groupId', targetKey: 'id' });
+    app.model.User.belongsTo(app.model.Group, { foreignKey: 'groupId' });
     app.model.User.hasMany(app.model.Article, { foreignKey: 'authorId' });
     app.model.User.hasMany(app.model.Comment, { foreignKey: 'authorId' });
+    app.model.User.belongsToMany(app.model.Project, {
+      through: {
+        model: 'userproject',
+        unique: false,
+      },
+      foreignKey: 'userId',
+      constraints: false,
+    });
   };
 
   return User;

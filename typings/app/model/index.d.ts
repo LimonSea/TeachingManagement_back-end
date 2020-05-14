@@ -5,13 +5,17 @@ import 'egg';
 import ExportArticle from '../../../app/model/article';
 import ExportComment from '../../../app/model/comment';
 import ExportGroup from '../../../app/model/group';
+import ExportProject from '../../../app/model/project';
 import ExportUser from '../../../app/model/user';
+import ExportUserProject from '../../../app/model/userProject';
 
 declare module 'egg' {
   interface IModel {
     Article: ReturnType<typeof ExportArticle>;
     Comment: ReturnType<typeof ExportComment>;
     Group: ReturnType<typeof ExportGroup>;
+    Project: ReturnType<typeof ExportProject>;
     User: ReturnType<typeof ExportUser>;
+    UserProject: ReturnType<typeof ExportUserProject>;
   }
 }

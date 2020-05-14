@@ -20,4 +20,8 @@ export default (app: Application) => {
 
   // 评论
   router.post('/writing/submitComment', jwt, controller.writing.createComment);
+
+  // 项目组
+  router.get('/project/search', jwt, controller.project.search);
+
 };
