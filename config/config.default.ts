@@ -61,11 +61,20 @@ export default (appInfo: EggAppInfo) => {
     origin: '*',
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
   };
+  config.multipart = {
+    mode: 'file',
+  };
 
   // add your special config in here
   const bizConfig = {
     sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
     pwdSecret: 'windhunter',
+    uploadDir: {
+      avatar: 'app/public/avatar/',
+      project: 'app/public/project/',
+      homework: 'app/public/homework/',
+    },
+    prefix: 'http://127.0.0.1:7001/',
   };
 
   // the return config will combines to EggAppConfig

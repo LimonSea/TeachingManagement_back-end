@@ -26,6 +26,12 @@ module.exports = (app: Application) => {
     },
     createdAt: { type: DATE, field: 'created_at' },
     updatedAt: { type: DATE, field: 'updated_at' },
+  }, {
+    getterMethods: {
+      avatar() {
+        return app.config.prefix + (this as any).getDataValue('avatar');
+      },
+    },
   });
 
   (User as any).associate = function(): void {

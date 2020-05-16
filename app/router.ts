@@ -12,6 +12,7 @@ export default (app: Application) => {
   router.post('/user/admin', jwt, controller.user.admin); // 验证token
   router.get('/user/currentUser', jwt, controller.user.currentUser);
   router.get('/user/userCenterInfo', controller.user.userCenterInfo);
+  router.post('/user/update', jwt, controller.user.update);
 
   // 文章
   router.post('/writing/submitArticle', jwt, controller.writing.createArticle);
@@ -23,5 +24,9 @@ export default (app: Application) => {
 
   // 项目组
   router.get('/project/search', jwt, controller.project.search);
+
+  // 上传图片
+  router.post('/upload', controller.tools.upload);
+
 
 };

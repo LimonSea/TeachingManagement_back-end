@@ -1,5 +1,5 @@
 import { Service } from 'egg';
-import { createHash, createHmac } from 'crypto';
+import { createHmac } from 'crypto';
 import { Code } from '../util/util';
 export default class User extends Service {
   // 获取全部用户
@@ -14,10 +14,10 @@ export default class User extends Service {
     const { ctx, app } = this;
     const { mail, mobile } = ctx.request.body;
     let { password } = ctx.request.body;
-    const md5email = createHash('md5').update(mail).digest('hex'); // 把邮箱转换成md5作为图片的地址
-    const avatar = `http://secure.gravatar.com/avatar/${md5email}`; // TODO:头像地址不确定
     // 生成用户名
     const name = `用户${mobile.substring(mobile.length - 4)}`;
+    // 默认头像
+    const avatar = 'public/avatar/normal.png';
     // 密码 Hmac 加密存储
     password = createHmac('md5', app.config.pwdSecret).update(password).digest('hex');
     // 存储数据库
@@ -119,10 +119,21 @@ export default class User extends Service {
         attributes: [],
         model: ctx.model.Group,
       },
-      where: {
-        id,
-      },
+      where: { id },
     });
     return { ...Code.SUCCESS, ...result.toJSON() };
+  }
+
+  // 更新
+  async update() {
+    const { ctx } = this;
+    const { mail, mobile, name, signature, avatar, id } = ctx.request.body;
+    // 存储数据库
+    const result = await ctx.model.User.update({ name, mail, mobile, avatar, signature }, {
+      where: { id },
+      returning: true,
+    });
+    if (result) return { ...Code.SUCCESS };
+    return { ...Code.ERROR };
   }
 }

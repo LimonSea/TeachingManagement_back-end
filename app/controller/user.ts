@@ -37,4 +37,10 @@ export default class User extends Controller {
     ctx.status = 200;
     ctx.body = await ctx.service.user.userCenterInfo();
   }
+  
+  async update() {
+    const ctx = this.ctx;
+    ctx.status = 200;
+    ctx.body = await ctx.service.user.update();
+  }
 }
