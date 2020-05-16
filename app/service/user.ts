@@ -131,7 +131,6 @@ export default class User extends Service {
     // 存储数据库
     const result = await ctx.model.User.update({ name, mail, mobile, avatar, signature }, {
       where: { id },
-      returning: true,
     });
     if (result) return { ...Code.SUCCESS };
     return { ...Code.ERROR };

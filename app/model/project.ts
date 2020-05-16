@@ -22,12 +22,6 @@ module.exports = (app: Application) => {
     status: { type: STRING(16), allowNull: false, defaultValue: 'normal' },
     createdAt: { type: DATE, field: 'created_at' },
     updatedAt: { type: DATE, field: 'updated_at' },
-  }, {
-    getterMethods: {
-      cover() {
-        return app.config.prefix + (this as any).getDataValue('cover');
-      },
-    },
   });
 
   (Project as any).associate = function(): void {

@@ -24,6 +24,11 @@ export default (app: Application) => {
 
   // 项目组
   router.get('/project/search', jwt, controller.project.search);
+  router.post('/project/create', jwt, controller.project.create);
+  router.post('/project/update', jwt, controller.project.update);
+
+  // 工作室
+  router.get('/group/member', jwt, controller.group.getMember);
 
   // 上传图片
   router.post('/upload', controller.tools.upload);
