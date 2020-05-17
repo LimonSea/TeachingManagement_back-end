@@ -1,7 +1,8 @@
 import { Application } from 'egg';
 
 export default (app: Application) => {
-  const { controller, router, jwt } = app;
+  const { controller, router, jwt, middleware } = app;
+  const checkAdmin = middleware.admin();
 
   // 用户
   // router.get('/', controller.home.index);
@@ -13,6 +14,7 @@ export default (app: Application) => {
   router.get('/user/currentUser', jwt, controller.user.currentUser);
   router.get('/user/userCenterInfo', controller.user.userCenterInfo);
   router.post('/user/update', jwt, controller.user.update);
+  router.get('/user/getProjectList', jwt, controller.user.getProjectList);
 
   // 文章
   router.post('/writing/submitArticle', jwt, controller.writing.createArticle);
@@ -23,9 +25,10 @@ export default (app: Application) => {
   router.post('/writing/submitComment', jwt, controller.writing.createComment);
 
   // 项目组
-  router.get('/project/search', jwt, controller.project.search);
-  router.post('/project/create', jwt, controller.project.create);
-  router.post('/project/update', jwt, controller.project.update);
+  router.get('/project/search', jwt, checkAdmin, controller.project.search);
+  router.post('/project/create', jwt, checkAdmin, controller.project.create);
+  router.post('/project/update', jwt, checkAdmin, controller.project.update);
+  router.post('/project/delete', jwt, checkAdmin, controller.project.delete);
 
   // 工作室
   router.get('/group/member', jwt, controller.group.getMember);

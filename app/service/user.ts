@@ -135,4 +135,27 @@ export default class User extends Service {
     if (result) return { ...Code.SUCCESS };
     return { ...Code.ERROR };
   }
+
+  // 查看用户的所有项目
+  async getProjectList() {
+    const { ctx } = this;
+    const { groupId: myGoupId } = ctx.state.user;
+    const { userId, groupId: currentGroupId } = ctx.query;
+    if (!myGoupId === currentGroupId) return { ...Code.ERROR, msg: '无权查看非工作室用户的项目' };
+    const result = await ctx.model.User.findOne({
+      attributes: [],
+      include: {
+        model: ctx.model.Project,
+        include: {
+          model: ctx.model.User,
+          attributes: [ 'id', 'name', 'avatar' ],
+        },
+      },
+      where: {
+        id: userId,
+      },
+    });
+    return { ...Code.SUCCESS, data: result.projects, totalCount: result.projects.length };
+  }
+
 }

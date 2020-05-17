@@ -20,4 +20,11 @@ export default class Project extends Controller {
     ctx.status = 200;
     ctx.body = await ctx.service.project.search();
   }
+
+  // 删除项目
+  async delete() {
+    const ctx = this.ctx;
+    ctx.status = 200;
+    ctx.body = await ctx.service.project.delete();
+  }
 }

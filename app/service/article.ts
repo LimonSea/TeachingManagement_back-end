@@ -8,32 +8,23 @@ export default class Article extends Service {
     const { title, desc, content } = ctx.request.body;
     const { id } = ctx.state.user;
     const result = await ctx.model.Article.create({ title, desc, content, authorId: id });
-    if (result.toJSON()) return { ...Code.SUCCESS };
+    if (result.toJSON()) return { ...Code.SUCCESS, id: result.id };
     return { ...Code.ERROR };
   }
 
   // 查看文章列表
   async search() {
     let result: any;
-    const { ctx, app } = this;
-    const { Sequelize: Seq } = app;
+    const { ctx } = this;
     // const { id = ctx.state.user, keyword = null, type = null } = ctx.query; TODO:增加关键词和类型搜索
     const { authorId, currentPage = 1, count = 10 } = ctx.query;
     if (authorId) {
       result = await ctx.model.Article.findAndCountAll({
-        attributes: {
-          include: [
-            [ Seq.col('user.name'), 'owner' ],
-            [ Seq.col('user.avatar'), 'avatar' ],
-            [ Seq.col('user.group_id'), 'groupId' ],
-            [ Seq.col('user->group.name'), 'groupName' ],
-          ],
-        },
         include: {
-          attributes: [],
+          attributes: [ 'name', 'avatar', 'groupId' ],
           model: ctx.model.User,
           include: {
-            attributes: [],
+            attributes: [ 'name' ],
             model: ctx.model.Group,
           },
         },
@@ -53,19 +44,11 @@ export default class Article extends Service {
     const { Sequelize: Seq } = app;
     const { id } = ctx.query;
     const result = await ctx.model.Article.findOne({
-      attributes: {
-        include: [
-          [ Seq.col('user.name'), 'owner' ],
-          [ Seq.col('user.avatar'), 'avatar' ],
-          [ Seq.col('user.group_id'), 'groupId' ],
-          [ Seq.col('user->group.name'), 'groupName' ],
-        ],
-      },
       include: {
-        attributes: [],
+        attributes: [ 'name', 'avatar', 'groupId' ],
         model: ctx.model.User,
         include: {
-          attributes: [],
+          attributes: [ 'name' ],
           model: ctx.model.Group,
         },
       },
