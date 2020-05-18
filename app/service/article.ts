@@ -14,34 +14,36 @@ export default class Article extends Service {
 
   // 查看文章列表
   async search() {
-    let result: any;
     const { ctx } = this;
-    // const { id = ctx.state.user, keyword = null, type = null } = ctx.query; TODO:增加关键词和类型搜索
+    // const { keyword = null, type = null } = ctx.query; TODO:增加关键词和类型搜索
     const { authorId, currentPage = 1, count = 10 } = ctx.query;
-    if (authorId) {
-      result = await ctx.model.Article.findAndCountAll({
+    const searchAttribute = {
+      authorId,
+    };
+    // 筛选，去除空的属性
+    Object.keys(searchAttribute).forEach(key => {
+      if (!searchAttribute[key]) delete searchAttribute[key];
+    });
+    const result = await ctx.model.Article.findAndCountAll({
+      include: {
+        attributes: [ 'name', 'avatar', 'groupId' ],
+        model: ctx.model.User,
         include: {
-          attributes: [ 'name', 'avatar', 'groupId' ],
-          model: ctx.model.User,
-          include: {
-            attributes: [ 'name' ],
-            model: ctx.model.Group,
-          },
+          attributes: [ 'name' ],
+          model: ctx.model.Group,
         },
-        where: {
-          authorId,
-        },
-        limit: parseInt(count),
-        offset: (currentPage - 1) * count,
-      });
-    }
+      },
+      where: searchAttribute,
+      order: [[ 'createdAt', 'DESC' ]],
+      limit: parseInt(count),
+      offset: (currentPage - 1) * count,
+    });
     return { ...Code.SUCCESS, data: result.rows, totalCount: result.count };
   }
 
   // 查看文章
   async show() {
-    const { ctx, app } = this;
-    const { Sequelize: Seq } = app;
+    const { ctx } = this;
     const { id } = ctx.query;
     const result = await ctx.model.Article.findOne({
       include: {
@@ -57,14 +59,8 @@ export default class Article extends Service {
       },
     });
     const commentList = await ctx.model.Comment.findAndCountAll({
-      attributes: {
-        include: [
-          [ Seq.col('user.name'), 'owner' ],
-          [ Seq.col('user.avatar'), 'avatar' ],
-        ],
-      },
       include: {
-        attributes: [],
+        attributes: [ 'name', 'avatar' ],
         model: ctx.model.User,
       },
       where: {
