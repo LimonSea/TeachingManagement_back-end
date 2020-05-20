@@ -49,4 +49,16 @@ export default class User extends Controller {
     ctx.status = 200;
     ctx.body = await ctx.service.user.getProjectList();
   }
+
+  async getTaskList() {
+    const ctx = this.ctx;
+    ctx.status = 200;
+    ctx.body = await ctx.service.user.getTaskList();
+  }
+
+  async getTaskDetail() {
+    const ctx = this.ctx;
+    ctx.status = 200;
+    ctx.body = await ctx.service.user.getTaskDetail();
+  }
 }

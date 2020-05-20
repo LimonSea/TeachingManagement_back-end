@@ -158,4 +158,26 @@ export default class User extends Service {
     return { ...Code.SUCCESS, data: result.projects, totalCount: result.projects.length };
   }
 
+  // 查看用户的所有作业
+  async getTaskList() {
+    const { ctx } = this;
+    const { id } = ctx.state.user;
+    const { currentPage = 1, count = 10 } = ctx.query;
+    const user = await ctx.model.User.findByPk(id);
+    const tasks = await user.getTasks({
+      order: [[ 'createdAt', 'DESC' ]],
+      limit: parseInt(count),
+      offset: (currentPage - 1) * count,
+    });
+    return { ...Code.SUCCESS, data: tasks, totalCount: tasks.length };
+  }
+
+  // 查看用户的作业详情
+  async getTaskDetail() {
+    const { ctx } = this;
+    const { userId, id } = ctx.query;
+    const user = await ctx.model.User.findByPk(userId);
+    const task = await user.getTasks({ where: { id } });
+    return { ...Code.SUCCESS, data: task[0] };
+  }
 }

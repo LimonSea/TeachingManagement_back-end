@@ -13,6 +13,7 @@ module.exports = (app: Application) => {
   (Group as any).associate = function(): void {
     app.model.Group.hasMany(app.model.User, { foreignKey: 'groupId' });
     app.model.Group.hasMany(app.model.Project, { foreignKey: 'groupId' });
+    app.model.Group.hasMany(app.model.Task, { foreignKey: 'groupId' });
   };
 
   return Group;

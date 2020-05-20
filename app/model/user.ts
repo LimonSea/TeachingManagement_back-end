@@ -46,6 +46,14 @@ module.exports = (app: Application) => {
       foreignKey: 'userId',
       constraints: false,
     });
+    app.model.User.belongsToMany(app.model.Task, {
+      through: {
+        model: 'usertask',
+        unique: false,
+      },
+      foreignKey: 'userId',
+      constraints: false,
+    });
   };
 
   return User;

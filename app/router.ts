@@ -15,6 +15,8 @@ export default (app: Application) => {
   router.get('/user/userCenterInfo', controller.user.userCenterInfo);
   router.post('/user/update', jwt, controller.user.update);
   router.get('/user/getProjectList', jwt, controller.user.getProjectList);
+  router.get('/user/getTaskList', jwt, controller.user.getTaskList);
+  router.get('/user/getTaskDetail', jwt, controller.user.getTaskDetail);
 
   // 文章
   router.post('/writing/submitArticle', jwt, controller.writing.createArticle);
@@ -35,6 +37,12 @@ export default (app: Application) => {
 
   // 上传图片
   router.post('/upload', controller.tools.upload);
+
+  // 作业
+  router.get('/task/search', jwt, checkAdmin, controller.task.search);
+  router.post('/task/create', jwt, checkAdmin, controller.task.create);
+  router.post('/task/update', jwt, checkAdmin, controller.task.update);
+  router.post('/task/delete', jwt, checkAdmin, controller.task.delete);
 
 
 };
