@@ -15,6 +15,16 @@ module.exports = (app: Application) => {
         key: 'id',
       },
     },
+    publisherId: {
+      type: INTEGER,
+      allowNull: true,
+      defaultValue: 0,
+      field: 'publisher_id',
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
     title: { type: STRING(100), allowNull: false, defaultValue: 'normal' },
     content: TEXT,
     deadline: { type: DATE, allowNull: false, defaultValue: NOW },

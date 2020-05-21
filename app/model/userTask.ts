@@ -8,9 +8,9 @@ module.exports = (app: Application) => {
     userId: { type: INTEGER, allowNull: true, unique: 'usertask', field: 'user_id' },
     taskId: { type: INTEGER, allowNull: true, unique: 'usertask', field: 'task_id' },
     status: { type: STRING(16), allowNull: false, defaultValue: 'published' },
-    submitContent: TEXT,
-    teacherComment: TEXT,
-    rate: { type: INTEGER, allowNull: true, defaultValue: 3 },
+    studentContent: { type: TEXT, field: 'student_content' },
+    teacherContent: { type: TEXT, field: 'teacher_content' },
+    rate: INTEGER,
     createdAt: { type: DATE, field: 'created_at' },
     updatedAt: { type: DATE, field: 'updated_at' },
   });

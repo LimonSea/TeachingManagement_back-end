@@ -176,8 +176,9 @@ export default class User extends Service {
   async getTaskDetail() {
     const { ctx } = this;
     const { userId, id } = ctx.query;
-    const user = await ctx.model.User.findByPk(userId);
+    const user = await ctx.model.User.findByPk(userId, { attributes: [ 'id', 'name', 'avatar' ] });
     const task = await user.getTasks({ where: { id } });
-    return { ...Code.SUCCESS, data: task[0] };
+    const publisher = await ctx.model.User.findByPk(task[0].publisherId, { attributes: [ 'id', 'name', 'avatar' ] });
+    return { ...Code.SUCCESS, data: task[0], user, publisher };
   }
 }

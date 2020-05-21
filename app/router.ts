@@ -40,9 +40,12 @@ export default (app: Application) => {
 
   // 作业
   router.get('/task/search', jwt, checkAdmin, controller.task.search);
+  router.get('/task/detail', jwt, checkAdmin, controller.task.detail);
   router.post('/task/create', jwt, checkAdmin, controller.task.create);
   router.post('/task/update', jwt, checkAdmin, controller.task.update);
   router.post('/task/delete', jwt, checkAdmin, controller.task.delete);
+  router.post('/task/studentSubmit', jwt, controller.task.studentSubmit);
+  router.post('/task/teacherSubmit', jwt, checkAdmin, controller.task.teacherSubmit);
 
 
 };

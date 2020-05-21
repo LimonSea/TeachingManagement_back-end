@@ -21,10 +21,31 @@ export default class Task extends Controller {
     ctx.body = await ctx.service.task.search();
   }
 
+  // 查看作业详情
+  async detail() {
+    const ctx = this.ctx;
+    ctx.status = 200;
+    ctx.body = await ctx.service.task.detail();
+  }
+
   // 删除作业
   async delete() {
     const ctx = this.ctx;
     ctx.status = 200;
     ctx.body = await ctx.service.task.delete();
+  }
+
+  // 学生提交
+  async studentSubmit() {
+    const ctx = this.ctx;
+    ctx.status = 200;
+    ctx.body = await ctx.service.task.studentSubmit();
+  }
+
+  // 教师提交
+  async teacherSubmit() {
+    const ctx = this.ctx;
+    ctx.status = 200;
+    ctx.body = await ctx.service.task.teacherSubmit();
   }
 }
