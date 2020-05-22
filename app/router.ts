@@ -34,6 +34,7 @@ export default (app: Application) => {
 
   // 工作室
   router.get('/group/member', jwt, controller.group.getMember);
+  router.post('/group/addMember', jwt, controller.group.addMember);
 
   // 上传图片
   router.post('/upload', controller.tools.upload);
