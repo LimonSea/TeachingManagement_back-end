@@ -36,6 +36,10 @@ export default class Task extends Service {
       where: {
         groupId,
       },
+      include: {
+        model: ctx.model.User,
+        attributes: [ 'id', 'name', 'avatar' ],
+      },
       order: [[ 'createdAt', 'DESC' ]],
       limit: parseInt(count),
       offset: (currentPage - 1) * count,

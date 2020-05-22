@@ -47,5 +47,10 @@ export default (app: Application) => {
   router.post('/task/studentSubmit', jwt, controller.task.studentSubmit);
   router.post('/task/teacherSubmit', jwt, checkAdmin, controller.task.teacherSubmit);
 
+  // 资源
+  router.get('/resource/search', jwt, controller.resource.search);
+  router.post('/resource/create', jwt, checkAdmin, controller.resource.create);
+  router.post('/resource/update', jwt, checkAdmin, controller.resource.update);
+  router.post('/resource/delete', jwt, checkAdmin, controller.resource.delete);
 
 };

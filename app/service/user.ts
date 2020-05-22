@@ -127,9 +127,9 @@ export default class User extends Service {
   // 更新
   async update() {
     const { ctx } = this;
-    const { mail, mobile, name, signature, avatar, id } = ctx.request.body;
+    const { sex, age, mail, mobile, name, signature, avatar, id } = ctx.request.body;
     // 存储数据库
-    const result = await ctx.model.User.update({ name, mail, mobile, avatar, signature }, {
+    const result = await ctx.model.User.update({ sex, age, name, mail, mobile, avatar, signature }, {
       where: { id },
     });
     if (result) return { ...Code.SUCCESS };

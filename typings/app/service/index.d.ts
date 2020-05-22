@@ -10,6 +10,7 @@ import ExportArticle from '../../../app/service/article';
 import ExportComment from '../../../app/service/comment';
 import ExportGroup from '../../../app/service/group';
 import ExportProject from '../../../app/service/project';
+import ExportResource from '../../../app/service/resource';
 import ExportTask from '../../../app/service/task';
 import ExportTools from '../../../app/service/tools';
 import ExportUser from '../../../app/service/user';
@@ -20,6 +21,7 @@ declare module 'egg' {
     comment: AutoInstanceType<typeof ExportComment>;
     group: AutoInstanceType<typeof ExportGroup>;
     project: AutoInstanceType<typeof ExportProject>;
+    resource: AutoInstanceType<typeof ExportResource>;
     task: AutoInstanceType<typeof ExportTask>;
     tools: AutoInstanceType<typeof ExportTools>;
     user: AutoInstanceType<typeof ExportUser>;

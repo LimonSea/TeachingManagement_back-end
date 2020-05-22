@@ -15,6 +15,7 @@ module.exports = (app: Application) => {
     app.model.Group.hasMany(app.model.User, { foreignKey: 'groupId' });
     app.model.Group.hasMany(app.model.Project, { foreignKey: 'groupId' });
     app.model.Group.hasMany(app.model.Task, { foreignKey: 'groupId' });
+    app.model.Group.hasMany(app.model.Resource, { foreignKey: 'groupId' });
   };
 
   return Group;

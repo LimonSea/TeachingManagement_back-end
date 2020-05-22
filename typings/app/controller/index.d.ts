@@ -4,6 +4,7 @@
 import 'egg';
 import ExportGroup from '../../../app/controller/group';
 import ExportProject from '../../../app/controller/project';
+import ExportResource from '../../../app/controller/resource';
 import ExportTask from '../../../app/controller/task';
 import ExportTools from '../../../app/controller/tools';
 import ExportUser from '../../../app/controller/user';
@@ -13,6 +14,7 @@ declare module 'egg' {
   interface IController {
     group: ExportGroup;
     project: ExportProject;
+    resource: ExportResource;
     task: ExportTask;
     tools: ExportTools;
     user: ExportUser;
