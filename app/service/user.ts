@@ -62,7 +62,7 @@ export default class User extends Service {
       currentAuthority: result.currentAuthority,
       groupId: result.groupId,
     }, app.config.jwt.secret, {
-      expiresIn: 60 * 240, // 过期时间，当前为4小时
+      expiresIn: 60 * 24 * 60, // 过期时间，当前为24小时
     });
     // 保存到redis
     // ctx.redis.set(result.id, token);

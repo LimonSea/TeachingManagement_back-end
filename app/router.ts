@@ -5,7 +5,6 @@ export default (app: Application) => {
   const checkAdmin = middleware.admin();
 
   // 用户
-  // router.get('/', controller.home.index);
   router.get('/user/list', controller.user.list);
   router.post('/user/register', controller.user.create);
   router.get('/user/login/captcha', controller.user.getCaptcha);
@@ -54,4 +53,6 @@ export default (app: Application) => {
   router.post('/resource/update', jwt, checkAdmin, controller.resource.update);
   router.post('/resource/delete', jwt, checkAdmin, controller.resource.delete);
 
+  // 页面
+  router.get('*', controller.home.index);
 };

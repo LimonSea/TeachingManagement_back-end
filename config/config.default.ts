@@ -42,11 +42,6 @@ export default (appInfo: EggAppInfo) => {
       database: 'windhunter',
     },
   };
-  config.security = {
-    csrf: {
-      ignore: [ '/api' ],
-    },
-  };
   config.jwt = {
     secret: 'windhunter', // 自定义 token 的加密条件字符串
   };
@@ -55,7 +50,6 @@ export default (appInfo: EggAppInfo) => {
       enable: false,
       ignoreJSON: true,
     },
-    domainWhiteList: [ 'http://localhost:8000' ], // 允许访问接口的白名单
   };
   config.cors = {
     origin: '*',
@@ -64,15 +58,36 @@ export default (appInfo: EggAppInfo) => {
   config.multipart = {
     mode: 'file',
   };
+  // 渲染模板
+  config.view = {
+    mapping: {
+      '.html': 'nunjucks',
+    },
+  };
+
+  // config.assets = {
+  //   publicPath: 'public/dist',
+  //   devServer: {
+  //     debug: true,
+  //     command: 'umi dev',
+  //     port: 8000,
+  //     env: {
+  //       APP_ROOT: process.cwd() + '/app/web',
+  //       BROWSER: 'none',
+  //       ESLINT: 'none',
+  //       SOCKET_SERVER: 'http://127.0.0.1:8000',
+  //       PUBLIC_PATH: 'http://127.0.0.1:8000',
+  //     },
+  //   },
+  // };
 
   // add your special config in here
   const bizConfig = {
-    sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
     pwdSecret: 'windhunter',
     uploadDir: {
       avatar: 'app/public/avatar/',
       project: 'app/public/project/',
-      homework: 'app/public/homework/',
+      task: 'app/public/task/',
     },
     prefix: 'http://127.0.0.1:7001/',
   };
