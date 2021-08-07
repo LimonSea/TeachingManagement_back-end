@@ -9,6 +9,11 @@ export default class User extends Controller {
     ctx.status = 201;
     ctx.body = await ctx.service.user.create();
   }
+  async vemail() {
+    const ctx = this.ctx;
+    ctx.status = 201;
+    ctx.body = await ctx.service.user.vemail();
+  }
   async getCaptcha() {
     const ctx = this.ctx;
     ctx.status = 200;

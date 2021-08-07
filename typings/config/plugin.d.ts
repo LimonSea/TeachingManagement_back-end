@@ -19,6 +19,7 @@ import 'egg-sequelize';
 import 'egg-jwt';
 import 'egg-cors';
 import 'egg-view-nunjucks';
+import 'egg-redis';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
@@ -39,5 +40,6 @@ declare module 'egg' {
     jwt?: EggPluginItem;
     cors?: EggPluginItem;
     nunjucks?: EggPluginItem;
+    redis?: EggPluginItem;
   }
 }

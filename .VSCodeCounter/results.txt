@@ -1,0 +1,370 @@
+Date : 2020-06-09 23:47:19
+Directory : f:\毕业设计\TeachingManagement_font-end_umi
+Total : 247 files,  17499 codes, 536 comments, 1791 blanks, all 19826 lines
+
+Languages
++------------------+------------+------------+------------+------------+------------+
+| language         | files      | code       | comment    | blank      | total      |
++------------------+------------+------------+------------+------------+------------+
+| TypeScript React |        101 |      9,790 |        326 |      1,013 |     11,129 |
+| TypeScript       |         70 |      3,577 |        116 |        402 |      4,095 |
+| Less             |         57 |      3,518 |         13 |        296 |      3,827 |
+| HTML             |          1 |        199 |          0 |         16 |        215 |
+| JavaScript       |          9 |        196 |         52 |         36 |        284 |
+| JSON             |          4 |        165 |         28 |          2 |        195 |
+| Markdown         |          1 |         36 |          0 |         22 |         58 |
+| EditorConfig     |          1 |         12 |          1 |          4 |         17 |
+| Ignore           |          1 |          4 |          0 |          0 |          4 |
+| XML              |          2 |          2 |          0 |          0 |          2 |
++------------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                            | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                               |        247 |     17,499 |        536 |      1,791 |     19,826 |
+| config                                                                                                          |          4 |        362 |         40 |         17 |        419 |
+| public                                                                                                          |          1 |          1 |          0 |          0 |          1 |
+| src                                                                                                             |        228 |     16,780 |        444 |      1,718 |     18,942 |
+| src\assets                                                                                                      |          1 |          1 |          0 |          0 |          1 |
+| src\components                                                                                                  |         22 |      1,222 |         84 |        145 |      1,451 |
+| src\components\Authorized                                                                                       |          7 |        262 |         56 |         40 |        358 |
+| src\components\GlobalHeader                                                                                     |          4 |        382 |         25 |         44 |        451 |
+| src\components\HeaderDropdown                                                                                   |          2 |         29 |          0 |          8 |         37 |
+| src\components\HeaderSearch                                                                                     |          2 |        125 |          0 |         12 |        137 |
+| src\components\NoticeIcon                                                                                       |          4 |        357 |          1 |         30 |        388 |
+| src\components\PageLoading                                                                                      |          1 |          2 |          2 |          2 |          6 |
+| src\components\SelectWriting                                                                                    |          2 |         65 |          0 |          9 |         74 |
+| src\layouts                                                                                                     |          5 |        330 |         30 |         38 |        398 |
+| src\models                                                                                                      |          5 |        347 |          5 |         42 |        394 |
+| src\pages                                                                                                       |        182 |     14,442 |        253 |      1,418 |     16,113 |
+| src\pages\account                                                                                               |         23 |      1,604 |         21 |        169 |      1,794 |
+| src\pages\account\center                                                                                        |         13 |        863 |         19 |         95 |        977 |
+| src\pages\account\center\components                                                                             |          8 |        375 |         14 |         47 |        436 |
+| src\pages\account\center\components\ArticleListContent                                                          |          2 |         65 |          0 |          6 |         71 |
+| src\pages\account\center\components\Articles                                                                    |          2 |         89 |         14 |         10 |        113 |
+| src\pages\account\center\components\AvatarList                                                                  |          2 |        116 |          0 |         21 |        137 |
+| src\pages\account\center\components\Projects                                                                    |          2 |        105 |          0 |         10 |        115 |
+| src\pages\account\settings                                                                                      |         10 |        741 |          2 |         74 |        817 |
+| src\pages\account\settings\components                                                                           |          5 |        378 |          0 |         31 |        409 |
+| src\pages\admin                                                                                                 |         23 |      2,192 |         32 |        181 |      2,405 |
+| src\pages\admin\group                                                                                           |          5 |        371 |          2 |         32 |        405 |
+| src\pages\admin\project                                                                                         |          7 |        744 |         11 |         59 |        814 |
+| src\pages\admin\project\components                                                                              |          1 |        124 |          1 |          9 |        134 |
+| src\pages\admin\project\utils                                                                                   |          1 |         46 |          2 |          3 |         51 |
+| src\pages\admin\task                                                                                            |         11 |      1,077 |         19 |         90 |      1,186 |
+| src\pages\admin\task\components                                                                                 |          1 |        120 |          0 |         11 |        131 |
+| src\pages\admin\task\overview                                                                                   |          5 |        379 |          0 |         30 |        409 |
+| src\pages\article                                                                                               |         15 |        905 |         76 |         89 |      1,070 |
+| src\pages\article\list                                                                                          |         11 |        660 |         75 |         67 |        802 |
+| src\pages\article\list\components                                                                               |          6 |        384 |          0 |         42 |        426 |
+| src\pages\article\list\components\ArticleListContent                                                            |          2 |         73 |          0 |          7 |         80 |
+| src\pages\article\list\components\StandardFormRow                                                               |          2 |        119 |          0 |         10 |        129 |
+| src\pages\article\list\components\TagSelect                                                                     |          2 |        192 |          0 |         25 |        217 |
+| src\pages\dashboard                                                                                             |         73 |      6,544 |         42 |        637 |      7,223 |
+| src\pages\dashboard\analysis                                                                                    |         42 |      3,313 |         21 |        333 |      3,667 |
+| src\pages\dashboard\analysis\components                                                                         |         33 |      2,531 |         15 |        247 |      2,793 |
+| src\pages\dashboard\analysis\components\Charts                                                                  |         23 |      1,753 |         13 |        208 |      1,974 |
+| src\pages\dashboard\analysis\components\Charts\Bar                                                              |          1 |        116 |          0 |         18 |        134 |
+| src\pages\dashboard\analysis\components\Charts\ChartCard                                                        |          2 |        165 |          0 |          9 |        174 |
+| src\pages\dashboard\analysis\components\Charts\Field                                                            |          2 |         30 |          0 |          6 |         36 |
+| src\pages\dashboard\analysis\components\Charts\Gauge                                                            |          1 |        171 |          0 |          9 |        180 |
+| src\pages\dashboard\analysis\components\Charts\MiniArea                                                         |          1 |        121 |          0 |         10 |        131 |
+| src\pages\dashboard\analysis\components\Charts\MiniBar                                                          |          1 |         45 |          1 |          9 |         55 |
+| src\pages\dashboard\analysis\components\Charts\MiniProgress                                                     |          2 |         74 |          0 |          6 |         80 |
+| src\pages\dashboard\analysis\components\Charts\Pie                                                              |          2 |        362 |          5 |         38 |        405 |
+| src\pages\dashboard\analysis\components\Charts\TagCloud                                                         |          2 |        187 |          3 |         30 |        220 |
+| src\pages\dashboard\analysis\components\Charts\TimelineChart                                                    |          2 |        123 |          0 |         16 |        139 |
+| src\pages\dashboard\analysis\components\Charts\WaterWave                                                        |          2 |        227 |          4 |         35 |        266 |
+| src\pages\dashboard\analysis\components\NumberInfo                                                              |          2 |        127 |          0 |          5 |        132 |
+| src\pages\dashboard\analysis\components\PageLoading                                                             |          1 |          7 |          2 |          2 |         11 |
+| src\pages\dashboard\analysis\components\Trend                                                                   |          2 |         72 |          0 |          9 |         81 |
+| src\pages\dashboard\analysis\utils                                                                              |          3 |        115 |          5 |         20 |        140 |
+| src\pages\dashboard\monitor                                                                                     |         20 |      1,736 |         15 |        191 |      1,942 |
+| src\pages\dashboard\monitor\components                                                                          |         14 |      1,458 |         15 |        167 |      1,640 |
+| src\pages\dashboard\monitor\components\ActiveChart                                                              |          2 |        145 |          0 |         15 |        160 |
+| src\pages\dashboard\monitor\components\Charts                                                                   |         12 |      1,313 |         15 |        152 |      1,480 |
+| src\pages\dashboard\monitor\components\Charts\Gauge                                                             |          1 |        171 |          0 |         10 |        181 |
+| src\pages\dashboard\monitor\components\Charts\Map                                                               |          1 |        138 |          2 |         11 |        151 |
+| src\pages\dashboard\monitor\components\Charts\MiniArea                                                          |          1 |        121 |          0 |         10 |        131 |
+| src\pages\dashboard\monitor\components\Charts\Pie                                                               |          2 |        362 |          6 |         38 |        406 |
+| src\pages\dashboard\monitor\components\Charts\TagCloud                                                          |          2 |        187 |          3 |         29 |        219 |
+| src\pages\dashboard\monitor\components\Charts\WaterWave                                                         |          2 |        227 |          4 |         35 |        266 |
+| src\pages\dashboard\workplace                                                                                   |         11 |      1,495 |          6 |        113 |      1,614 |
+| src\pages\dashboard\workplace\components                                                                        |          5 |        360 |          3 |         49 |        412 |
+| src\pages\dashboard\workplace\components\EditableLinkGroup                                                      |          2 |         56 |          0 |          9 |         65 |
+| src\pages\dashboard\workplace\components\Radar                                                                  |          3 |        304 |          3 |         40 |        347 |
+| src\pages\resource                                                                                              |          8 |        604 |          8 |         69 |        681 |
+| src\pages\resource\components                                                                                   |          1 |         96 |          0 |         10 |        106 |
+| src\pages\resource\utils                                                                                        |          1 |         46 |          2 |          3 |         51 |
+| src\pages\task                                                                                                  |         12 |        955 |          5 |         88 |      1,048 |
+| src\pages\task\detail                                                                                           |          7 |        574 |          5 |         53 |        632 |
+| src\pages\task\detail\components                                                                                |          2 |        126 |          3 |         16 |        145 |
+| src\pages\task\list                                                                                             |          5 |        381 |          0 |         35 |        416 |
+| src\pages\user                                                                                                  |         18 |      1,132 |         64 |        138 |      1,334 |
+| src\pages\user\login                                                                                            |         12 |        687 |         40 |         83 |        810 |
+| src\pages\user\login\components                                                                                 |          7 |        439 |          4 |         52 |        495 |
+| src\pages\user\login\components\Login                                                                           |          7 |        439 |          4 |         52 |        495 |
+| src\pages\user\login\utils                                                                                      |          1 |         15 |          3 |          4 |         22 |
+| src\pages\user\register                                                                                         |          4 |        394 |         24 |         50 |        468 |
+| src\pages\user\register-result                                                                                  |          2 |         51 |          0 |          5 |         56 |
+| src\pages\writing                                                                                               |          4 |        161 |          5 |         17 |        183 |
+| src\pages\writing\article                                                                                       |          4 |        161 |          5 |         17 |        183 |
+| src\services                                                                                                    |          2 |         26 |          0 |          8 |         34 |
+| src\utils                                                                                                       |          6 |        206 |         37 |         32 |        275 |
+| tests                                                                                                           |          4 |        136 |         23 |         23 |        182 |
++-----------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| filename                                                                                                        | language         | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| f:\毕业设计\TeachingManagement_font-end_umi\.editorconfig                                                           | EditorConfig     |         12 |          1 |          4 |         17 |
+| f:\毕业设计\TeachingManagement_font-end_umi\.eslintignore                                                           | Ignore           |          4 |          0 |          0 |          4 |
+| f:\毕业设计\TeachingManagement_font-end_umi\.eslintrc.js                                                            | JavaScript       |          8 |          0 |          1 |          9 |
+| f:\毕业设计\TeachingManagement_font-end_umi\.prettierrc.js                                                          | JavaScript       |          4 |          0 |          2 |          6 |
+| f:\毕业设计\TeachingManagement_font-end_umi\.stylelintrc.js                                                         | JavaScript       |          4 |          0 |          2 |          6 |
+| f:\毕业设计\TeachingManagement_font-end_umi\README.md                                                               | Markdown         |         36 |          0 |         22 |         58 |
+| f:\毕业设计\TeachingManagement_font-end_umi\config\config.ts                                                        | TypeScript       |        252 |          4 |          5 |        261 |
+| f:\毕业设计\TeachingManagement_font-end_umi\config\defaultSettings.ts                                               | TypeScript       |         32 |         25 |          4 |         61 |
+| f:\毕业设计\TeachingManagement_font-end_umi\config\plugin.config.ts                                                 | TypeScript       |         55 |          4 |          7 |         66 |
+| f:\毕业设计\TeachingManagement_font-end_umi\config\proxy.ts                                                         | TypeScript       |         23 |          7 |          1 |         31 |
+| f:\毕业设计\TeachingManagement_font-end_umi\jest.config.js                                                          | JavaScript       |          9 |          0 |          1 |         10 |
+| f:\毕业设计\TeachingManagement_font-end_umi\jsconfig.json                                                           | JSON             |          7 |          4 |          0 |         11 |
+| f:\毕业设计\TeachingManagement_font-end_umi\package.json                                                            | JSON             |        115 |         18 |          1 |        134 |
+| f:\毕业设计\TeachingManagement_font-end_umi\public\pro_icon.svg                                                     | XML              |          1 |          0 |          0 |          1 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\assets\logo.svg                                                     | XML              |          1 |          0 |          0 |          1 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\Authorized\Authorized.tsx                                | TypeScript React |         30 |          0 |          6 |         36 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\Authorized\AuthorizedRoute.tsx                           | TypeScript React |         29 |          0 |          5 |         34 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\Authorized\CheckPermissions.tsx                          | TypeScript React |         62 |         16 |          6 |         84 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\Authorized\PromiseRender.tsx                             | TypeScript React |         78 |          6 |         10 |         94 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\Authorized\Secured.tsx                                   | TypeScript React |         33 |         28 |          6 |         67 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\Authorized\index.tsx                                     | TypeScript React |          8 |          0 |          4 |         12 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\Authorized\renderAuthorize.ts                            | TypeScript       |         22 |          6 |          3 |         31 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\GlobalHeader\AvatarDropdown.tsx                          | TypeScript React |         78 |          0 |         10 |         88 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\GlobalHeader\NoticeIconView.tsx                          | TypeScript React |        138 |         14 |         20 |        172 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\GlobalHeader\RightContent.tsx                            | TypeScript React |         67 |         11 |          7 |         85 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\GlobalHeader\index.less                                  | Less             |         99 |          0 |          7 |        106 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\HeaderDropdown\index.less                                | Less             |         14 |          0 |          3 |         17 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\HeaderDropdown\index.tsx                                 | TypeScript React |         15 |          0 |          5 |         20 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\HeaderSearch\index.less                                  | Less             |         29 |          0 |          2 |         31 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\HeaderSearch\index.tsx                                   | TypeScript React |         96 |          0 |         10 |        106 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\NoticeIcon\NoticeList.less                               | Less             |         96 |          0 |          8 |        104 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\NoticeIcon\NoticeList.tsx                                | TypeScript React |        110 |          1 |          5 |        116 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\NoticeIcon\index.less                                    | Less             |         27 |          0 |          5 |         32 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\NoticeIcon\index.tsx                                     | TypeScript React |        124 |          0 |         12 |        136 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\PageLoading\index.tsx                                    | TypeScript React |          2 |          2 |          2 |          6 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\SelectWriting\index.less                                 | Less             |         22 |          0 |          3 |         25 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\components\SelectWriting\index.tsx                                  | TypeScript React |         43 |          0 |          6 |         49 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\global.less                                                         | Less             |         45 |          1 |          9 |         55 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\global.tsx                                                          | TypeScript React |         74 |          4 |         14 |         92 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\layouts\BasicLayout.tsx                                             | TypeScript React |        144 |         28 |         11 |        183 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\layouts\BlankLayout.tsx                                             | TypeScript React |          3 |          0 |          3 |          6 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\layouts\SecurityLayout.tsx                                          | TypeScript React |         49 |          2 |          7 |         58 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\layouts\UserLayout.less                                             | Less             |         61 |          0 |         11 |         72 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\layouts\UserLayout.tsx                                              | TypeScript React |         73 |          0 |          6 |         79 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\manifest.json                                                       | JSON             |         22 |          0 |          1 |         23 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\models\connect.d.ts                                                 | TypeScript       |         27 |          0 |          5 |         32 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\models\global.ts                                                    | TypeScript       |        125 |          1 |         13 |        139 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\models\login.ts                                                     | TypeScript       |         81 |          4 |          9 |         94 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\models\setting.ts                                                   | TypeScript       |         33 |          0 |          5 |         38 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\models\user.ts                                                      | TypeScript       |         81 |          0 |         10 |         91 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\404.tsx                                                       | TypeScript React |         16 |          0 |          3 |         19 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\Admin.tsx                                                     | TypeScript React |         30 |          0 |          2 |         32 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\Authorized.tsx                                                | TypeScript React |         33 |          0 |          4 |         37 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\Welcome.less                                                  | Less             |          7 |          0 |          2 |          9 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\Welcome.tsx                                                   | TypeScript React |         60 |          0 |          3 |         63 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\Center.less                                    | Less             |         74 |          0 |         13 |         87 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\components\ArticleListContent\index.less       | Less             |         36 |          0 |          3 |         39 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\components\ArticleListContent\index.tsx        | TypeScript React |         29 |          0 |          3 |         32 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\components\Articles\index.less                 | Less             |         11 |          0 |          2 |         13 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\components\Articles\index.tsx                  | TypeScript React |         78 |         14 |          8 |        100 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\components\AvatarList\index.less               | Less             |         44 |          0 |          7 |         51 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\components\AvatarList\index.tsx                | TypeScript React |         72 |          0 |         14 |         86 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\components\Projects\index.less                 | Less             |         58 |          0 |          6 |         64 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\components\Projects\index.tsx                  | TypeScript React |         47 |          0 |          4 |         51 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\data.d.ts                                      | TypeScript       |         80 |          0 |          7 |         87 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\index.tsx                                      | TypeScript React |        226 |          4 |         16 |        246 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\model.ts                                       | TypeScript       |         98 |          1 |          8 |        107 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\service.ts                                     | TypeScript       |         10 |          0 |          4 |         14 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\components\BaseView.less                     | Less             |         53 |          0 |          6 |         59 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\components\base.tsx                          | TypeScript React |        179 |          0 |         11 |        190 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\components\binding.tsx                       | TypeScript React |         45 |          0 |          4 |         49 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\components\notification.tsx                  | TypeScript React |         42 |          0 |          5 |         47 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\components\security.tsx                      | TypeScript React |         59 |          0 |          5 |         64 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\data.d.ts                                    | TypeScript       |         32 |          0 |          3 |         35 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\index.tsx                                    | TypeScript React |        164 |          0 |         24 |        188 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\model.ts                                     | TypeScript       |         57 |          0 |          8 |         65 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\service.ts                                   | TypeScript       |         18 |          0 |          4 |         22 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\style.less                                   | Less             |         92 |          2 |          4 |         98 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\group\data.d.ts                                         | TypeScript       |         12 |          0 |          3 |         15 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\group\index.tsx                                         | TypeScript React |         93 |          1 |          7 |        101 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\group\model.ts                                          | TypeScript       |         67 |          0 |          8 |         75 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\group\service.ts                                        | TypeScript       |         10 |          1 |          3 |         14 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\group\style.less                                        | Less             |        189 |          0 |         11 |        200 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\project\components\OperationModal.tsx                   | TypeScript React |        124 |          1 |          9 |        134 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\project\data.d.ts                                       | TypeScript       |         17 |          0 |          2 |         19 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\project\index.tsx                                       | TypeScript React |        206 |          1 |         18 |        225 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\project\model.ts                                        | TypeScript       |        128 |          3 |         10 |        141 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\project\service.ts                                      | TypeScript       |         37 |          4 |          7 |         48 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\project\style.less                                      | Less             |        186 |          0 |         10 |        196 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\project\utils\utils.less                                | Less             |         46 |          2 |          3 |         51 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\components\OperationModal.tsx                      | TypeScript React |        120 |          0 |         11 |        131 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\data.d.ts                                          | TypeScript       |         16 |          0 |          2 |         18 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\index.tsx                                          | TypeScript React |        195 |         11 |         19 |        225 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\model.ts                                           | TypeScript       |        142 |          4 |         10 |        156 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\overview\data.d.ts                                 | TypeScript       |         22 |          0 |          3 |         25 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\overview\index.tsx                                 | TypeScript React |        108 |          0 |          6 |        114 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\overview\model.ts                                  | TypeScript       |         56 |          0 |          8 |         64 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\overview\service.ts                                | TypeScript       |          4 |          0 |          2 |          6 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\overview\style.less                                | Less             |        189 |          0 |         11 |        200 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\service.ts                                         | TypeScript       |         36 |          4 |          7 |         47 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\style.less                                         | Less             |        189 |          0 |         11 |        200 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\index.tsx                                             | TypeScript React |        163 |          1 |          8 |        172 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\components\ArticleListContent\index.less         | Less             |         35 |          0 |          3 |         38 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\components\ArticleListContent\index.tsx          | TypeScript React |         38 |          0 |          4 |         42 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\components\StandardFormRow\index.less            | Less             |         84 |          0 |          5 |         89 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\components\StandardFormRow\index.tsx             | TypeScript React |         35 |          0 |          5 |         40 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\components\TagSelect\index.less                  | Less             |         32 |          0 |          2 |         34 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\components\TagSelect\index.tsx                   | TypeScript React |        160 |          0 |         23 |        183 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\data.d.ts                                        | TypeScript       |         19 |          0 |          1 |         20 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\index.tsx                                        | TypeScript React |        165 |         75 |         11 |        251 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\model.ts                                         | TypeScript       |         57 |          0 |          8 |         65 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\service.ts                                       | TypeScript       |          6 |          0 |          2 |          8 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\style.less                                       | Less             |         29 |          0 |          3 |         32 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\model.ts                                              | TypeScript       |         62 |          0 |          8 |         70 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\service.ts                                            | TypeScript       |         10 |          0 |          3 |         13 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\style.less                                            | Less             |         10 |          0 |          3 |         13 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\_mock.ts                                   | TypeScript       |        185 |          1 |         12 |        198 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\Bar\index.tsx            | TypeScript React |        116 |          0 |         18 |        134 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\ChartCard\index.less     | Less             |         74 |          0 |          2 |         76 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\ChartCard\index.tsx      | TypeScript React |         91 |          0 |          7 |         98 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\Field\index.less         | Less             |         16 |          0 |          2 |         18 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\Field\index.tsx          | TypeScript React |         14 |          0 |          4 |         18 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\Gauge\index.tsx          | TypeScript React |        171 |          0 |          9 |        180 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\MiniArea\index.tsx       | TypeScript React |        121 |          0 |         10 |        131 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\MiniBar\index.tsx        | TypeScript React |         45 |          1 |          9 |         55 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\MiniProgress\index.less  | Less             |         36 |          0 |          2 |         38 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\MiniProgress\index.tsx   | TypeScript React |         38 |          0 |          4 |         42 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\Pie\index.less           | Less             |         92 |          0 |          3 |         95 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\Pie\index.tsx            | TypeScript React |        270 |          5 |         35 |        310 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\TagCloud\index.less      | Less             |          6 |          0 |          1 |          7 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\TagCloud\index.tsx       | TypeScript React |        181 |          3 |         29 |        213 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\TimelineChart\index.less | Less             |          4 |          0 |          2 |          6 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\TimelineChart\index.tsx  | TypeScript React |        119 |          0 |         14 |        133 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\WaterWave\index.less     | Less             |         27 |          0 |          2 |         29 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\WaterWave\index.tsx      | TypeScript React |        200 |          4 |         33 |        237 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\autoHeight.tsx           | TypeScript React |         67 |          0 |         13 |         80 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\bizcharts.d.ts           | TypeScript       |          2 |          0 |          2 |          4 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\bizcharts.tsx            | TypeScript React |          2 |          0 |          2 |          4 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\index.less               | Less             |         19 |          0 |          1 |         20 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\index.tsx                | TypeScript React |         42 |          0 |          4 |         46 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\IntroduceRow.tsx                | TypeScript React |        125 |          0 |          5 |        130 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\NumberInfo\index.less           | Less             |         67 |          0 |          2 |         69 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\NumberInfo\index.tsx            | TypeScript React |         60 |          0 |          3 |         63 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\OfflineData.tsx                 | TypeScript React |         92 |          0 |          5 |         97 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\PageLoading\index.tsx           | TypeScript React |          7 |          2 |          2 |         11 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\ProportionSales.tsx             | TypeScript React |         63 |          0 |          3 |         66 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\SalesCard.tsx                   | TypeScript React |        136 |          0 |          6 |        142 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\TopSearch.tsx                   | TypeScript React |        156 |          0 |          4 |        160 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Trend\index.less                | Less             |         33 |          0 |          5 |         38 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Trend\index.tsx                 | TypeScript React |         39 |          0 |          4 |         43 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\data.d.ts                                  | TypeScript       |         37 |          0 |          6 |         43 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\index.tsx                                  | TypeScript React |        206 |          0 |         22 |        228 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\model.tsx                                  | TypeScript React |         61 |          0 |          9 |         70 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\service.tsx                                | TypeScript React |          4 |          0 |          2 |          6 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\style.less                                 | Less             |        174 |          0 |         15 |        189 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\utils\Yuan.tsx                             | TypeScript React |         28 |          3 |          5 |         36 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\utils\utils.less                           | Less             |         46 |          2 |          3 |         51 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\utils\utils.ts                             | TypeScript       |         41 |          0 |         12 |         53 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\_mock.ts                                    | TypeScript       |          6 |          0 |          2 |          8 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\ActiveChart\index.less           | Less             |         49 |          0 |          3 |         52 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\ActiveChart\index.tsx            | TypeScript React |         96 |          0 |         12 |        108 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\Gauge\index.tsx           | TypeScript React |        171 |          0 |         10 |        181 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\Map\index.tsx             | TypeScript React |        138 |          2 |         11 |        151 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\MiniArea\index.tsx        | TypeScript React |        121 |          0 |         10 |        131 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\Pie\index.less            | Less             |         92 |          0 |          3 |         95 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\Pie\index.tsx             | TypeScript React |        270 |          6 |         35 |        311 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\TagCloud\index.less       | Less             |          6 |          0 |          1 |          7 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\TagCloud\index.tsx        | TypeScript React |        181 |          3 |         28 |        212 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\WaterWave\index.less      | Less             |         27 |          0 |          2 |         29 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\WaterWave\index.tsx       | TypeScript React |        200 |          4 |         33 |        237 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\autoHeight.tsx            | TypeScript React |         67 |          0 |         13 |         80 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\index.less                | Less             |         25 |          0 |          3 |         28 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\index.tsx                 | TypeScript React |         15 |          0 |          3 |         18 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\data.d.ts                                   | TypeScript       |          5 |          0 |          1 |          6 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\index.tsx                                   | TypeScript React |        205 |          0 |          6 |        211 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\model.ts                                    | TypeScript       |         40 |          0 |          9 |         49 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\service.ts                                  | TypeScript       |          4 |          0 |          2 |          6 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\style.less                                  | Less             |         18 |          0 |          4 |         22 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\_mock.ts                                  | TypeScript       |        430 |          1 |         15 |        446 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\components\EditableLinkGroup\index.less   | Less             |         15 |          0 |          2 |         17 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\components\EditableLinkGroup\index.tsx    | TypeScript React |         41 |          0 |          7 |         48 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\components\Radar\autoHeight.tsx           | TypeScript React |         67 |          0 |         13 |         80 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\components\Radar\index.less               | Less             |         45 |          0 |          2 |         47 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\components\Radar\index.tsx                | TypeScript React |        192 |          3 |         25 |        220 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\data.d.ts                                 | TypeScript       |        105 |          0 |         12 |        117 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\index.tsx                                 | TypeScript React |        259 |          0 |         12 |        271 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\model.ts                                  | TypeScript       |         94 |          0 |          5 |         99 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\service.ts                                | TypeScript       |         13 |          0 |          5 |         18 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\style.less                                | Less             |        234 |          2 |         15 |        251 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\document.ejs                                                  | HTML             |        199 |          0 |         16 |        215 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\resource\_mock.ts                                             | TypeScript       |        106 |          1 |         10 |        117 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\resource\components\OperationModal.tsx                        | TypeScript React |         96 |          0 |         10 |        106 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\resource\data.d.ts                                            | TypeScript       |         19 |          0 |          3 |         22 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\resource\index.tsx                                            | TypeScript React |        144 |          0 |         15 |        159 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\resource\model.ts                                             | TypeScript       |         93 |          2 |         10 |        105 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\resource\service.ts                                           | TypeScript       |         33 |          3 |          7 |         43 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\resource\style.less                                           | Less             |         67 |          0 |         11 |         78 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\resource\utils\utils.less                                     | Less             |         46 |          2 |          3 |         51 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\detail\components\studentEditor.tsx                      | TypeScript React |         58 |          3 |          8 |         69 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\detail\components\teacherEditor.tsx                      | TypeScript React |         68 |          0 |          8 |         76 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\detail\data.d.ts                                         | TypeScript       |         22 |          0 |          3 |         25 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\detail\index.tsx                                         | TypeScript React |        132 |          2 |         11 |        145 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\detail\model.ts                                          | TypeScript       |         89 |          0 |          8 |         97 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\detail\service.ts                                        | TypeScript       |         16 |          0 |          4 |         20 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\detail\style.less                                        | Less             |        189 |          0 |         11 |        200 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\list\data.d.ts                                           | TypeScript       |         17 |          0 |          1 |         18 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\list\index.tsx                                           | TypeScript React |        128 |          0 |         11 |        139 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\list\model.ts                                            | TypeScript       |         43 |          0 |          9 |         52 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\list\service.ts                                          | TypeScript       |          4 |          0 |          3 |          7 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\list\style.less                                          | Less             |        189 |          0 |         11 |        200 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\components\Login\LoginContext.tsx                  | TypeScript React |         10 |          0 |          4 |         14 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\components\Login\LoginItem.tsx                     | TypeScript React |        153 |          3 |         14 |        170 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\components\Login\LoginSubmit.tsx                   | TypeScript React |         18 |          0 |          6 |         24 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\components\Login\LoginTab.tsx                      | TypeScript React |         36 |          1 |          9 |         46 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\components\Login\index.less                        | Less             |         41 |          0 |          9 |         50 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\components\Login\index.tsx                         | TypeScript React |        110 |          0 |          8 |        118 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\components\Login\map.tsx                           | TypeScript React |         71 |          0 |          2 |         73 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\index.tsx                                          | TypeScript React |        110 |         32 |          7 |        149 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\model.ts                                           | TypeScript       |         74 |          1 |          9 |         84 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\service.ts                                         | TypeScript       |         16 |          0 |          4 |         20 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\style.less                                         | Less             |         33 |          0 |          7 |         40 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\utils\utils.ts                                     | TypeScript       |         15 |          3 |          4 |         22 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\register-result\index.tsx                                | TypeScript React |         28 |          0 |          4 |         32 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\register-result\style.less                               | Less             |         23 |          0 |          1 |         24 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\register\index.tsx                                       | TypeScript React |        284 |         24 |         27 |        335 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\register\model.ts                                        | TypeScript       |         53 |          0 |          9 |         62 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\register\service.ts                                      | TypeScript       |          8 |          0 |          2 |         10 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\register\style.less                                      | Less             |         49 |          0 |         12 |         61 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\writing\article\index.tsx                                     | TypeScript React |        124 |          5 |          8 |        137 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\writing\article\model.ts                                      | TypeScript       |         25 |          0 |          5 |         30 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\writing\article\service.ts                                    | TypeScript       |          7 |          0 |          2 |          9 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\pages\writing\article\style.less                                    | Less             |          5 |          0 |          2 |          7 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\service-worker.js                                                   | JavaScript       |         35 |         29 |          7 |         71 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\services\login.ts                                                   | TypeScript       |         16 |          0 |          4 |         20 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\services\user.ts                                                    | TypeScript       |         10 |          0 |          4 |         14 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\typings.d.ts                                                        | TypeScript       |         30 |          1 |          4 |         35 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\utils\Authorized.ts                                                 | TypeScript       |          9 |          7 |          4 |         20 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\utils\authority.ts                                                  | TypeScript       |         25 |          3 |          4 |         32 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\utils\request.ts                                                    | TypeScript       |         54 |         16 |          9 |         79 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\utils\utils.less                                                    | Less             |         14 |          2 |          1 |         17 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\utils\utils.test.ts                                                 | TypeScript       |         69 |          0 |          8 |         77 |
+| f:\毕业设计\TeachingManagement_font-end_umi\src\utils\utils.ts                                                      | TypeScript       |         35 |          9 |          6 |         50 |
+| f:\毕业设计\TeachingManagement_font-end_umi\tests\PuppeteerEnvironment.js                                           | JavaScript       |         30 |          4 |          8 |         42 |
+| f:\毕业设计\TeachingManagement_font-end_umi\tests\beforeTest.js                                                     | JavaScript       |         29 |          6 |          5 |         40 |
+| f:\毕业设计\TeachingManagement_font-end_umi\tests\getBrowser.js                                                     | JavaScript       |         38 |          5 |          4 |         47 |
+| f:\毕业设计\TeachingManagement_font-end_umi\tests\run-tests.js                                                      | JavaScript       |         39 |          8 |          6 |         53 |
+| f:\毕业设计\TeachingManagement_font-end_umi\tsconfig.json                                                           | JSON             |         21 |          6 |          0 |         27 |
+| Total                                                                                                           |                  |     17,499 |        536 |      1,791 |     19,826 |
++-----------------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+

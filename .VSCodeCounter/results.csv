@@ -1,0 +1,249 @@
+"filename", "language", "EditorConfig", "Ignore", "JavaScript", "JSON", "Markdown", "TypeScript", "Less", "XML", "TypeScript React", "HTML", "comment", "blank", "total"
+"f:\毕业设计\TeachingManagement_font-end_umi\.editorconfig", "EditorConfig", 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 17
+"f:\毕业设计\TeachingManagement_font-end_umi\.eslintignore", "Ignore", 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4
+"f:\毕业设计\TeachingManagement_font-end_umi\.eslintrc.js", "JavaScript", 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 1, 9
+"f:\毕业设计\TeachingManagement_font-end_umi\.prettierrc.js", "JavaScript", 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"f:\毕业设计\TeachingManagement_font-end_umi\.stylelintrc.js", "JavaScript", 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"f:\毕业设计\TeachingManagement_font-end_umi\README.md", "Markdown", 0, 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 22, 58
+"f:\毕业设计\TeachingManagement_font-end_umi\config\config.ts", "TypeScript", 0, 0, 0, 0, 0, 252, 0, 0, 0, 0, 4, 5, 261
+"f:\毕业设计\TeachingManagement_font-end_umi\config\defaultSettings.ts", "TypeScript", 0, 0, 0, 0, 0, 32, 0, 0, 0, 0, 25, 4, 61
+"f:\毕业设计\TeachingManagement_font-end_umi\config\plugin.config.ts", "TypeScript", 0, 0, 0, 0, 0, 55, 0, 0, 0, 0, 4, 7, 66
+"f:\毕业设计\TeachingManagement_font-end_umi\config\proxy.ts", "TypeScript", 0, 0, 0, 0, 0, 23, 0, 0, 0, 0, 7, 1, 31
+"f:\毕业设计\TeachingManagement_font-end_umi\jest.config.js", "JavaScript", 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"f:\毕业设计\TeachingManagement_font-end_umi\jsconfig.json", "JSON", 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 4, 0, 11
+"f:\毕业设计\TeachingManagement_font-end_umi\package.json", "JSON", 0, 0, 0, 115, 0, 0, 0, 0, 0, 0, 18, 1, 134
+"f:\毕业设计\TeachingManagement_font-end_umi\public\pro_icon.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"f:\毕业设计\TeachingManagement_font-end_umi\src\assets\logo.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\Authorized\Authorized.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 30, 0, 0, 6, 36
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\Authorized\AuthorizedRoute.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 29, 0, 0, 5, 34
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\Authorized\CheckPermissions.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 62, 0, 16, 6, 84
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\Authorized\PromiseRender.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 78, 0, 6, 10, 94
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\Authorized\Secured.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 33, 0, 28, 6, 67
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\Authorized\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 4, 12
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\Authorized\renderAuthorize.ts", "TypeScript", 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 6, 3, 31
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\GlobalHeader\AvatarDropdown.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 78, 0, 0, 10, 88
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\GlobalHeader\NoticeIconView.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 138, 0, 14, 20, 172
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\GlobalHeader\RightContent.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 67, 0, 11, 7, 85
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\GlobalHeader\index.less", "Less", 0, 0, 0, 0, 0, 0, 99, 0, 0, 0, 0, 7, 106
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\HeaderDropdown\index.less", "Less", 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 3, 17
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\HeaderDropdown\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 5, 20
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\HeaderSearch\index.less", "Less", 0, 0, 0, 0, 0, 0, 29, 0, 0, 0, 0, 2, 31
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\HeaderSearch\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 96, 0, 0, 10, 106
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\NoticeIcon\NoticeList.less", "Less", 0, 0, 0, 0, 0, 0, 96, 0, 0, 0, 0, 8, 104
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\NoticeIcon\NoticeList.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 110, 0, 1, 5, 116
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\NoticeIcon\index.less", "Less", 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 5, 32
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\NoticeIcon\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 124, 0, 0, 12, 136
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\PageLoading\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 2, 6
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\SelectWriting\index.less", "Less", 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 3, 25
+"f:\毕业设计\TeachingManagement_font-end_umi\src\components\SelectWriting\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 43, 0, 0, 6, 49
+"f:\毕业设计\TeachingManagement_font-end_umi\src\global.less", "Less", 0, 0, 0, 0, 0, 0, 45, 0, 0, 0, 1, 9, 55
+"f:\毕业设计\TeachingManagement_font-end_umi\src\global.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 74, 0, 4, 14, 92
+"f:\毕业设计\TeachingManagement_font-end_umi\src\layouts\BasicLayout.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 144, 0, 28, 11, 183
+"f:\毕业设计\TeachingManagement_font-end_umi\src\layouts\BlankLayout.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 3, 6
+"f:\毕业设计\TeachingManagement_font-end_umi\src\layouts\SecurityLayout.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 49, 0, 2, 7, 58
+"f:\毕业设计\TeachingManagement_font-end_umi\src\layouts\UserLayout.less", "Less", 0, 0, 0, 0, 0, 0, 61, 0, 0, 0, 0, 11, 72
+"f:\毕业设计\TeachingManagement_font-end_umi\src\layouts\UserLayout.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 73, 0, 0, 6, 79
+"f:\毕业设计\TeachingManagement_font-end_umi\src\manifest.json", "JSON", 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 1, 23
+"f:\毕业设计\TeachingManagement_font-end_umi\src\models\connect.d.ts", "TypeScript", 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 5, 32
+"f:\毕业设计\TeachingManagement_font-end_umi\src\models\global.ts", "TypeScript", 0, 0, 0, 0, 0, 125, 0, 0, 0, 0, 1, 13, 139
+"f:\毕业设计\TeachingManagement_font-end_umi\src\models\login.ts", "TypeScript", 0, 0, 0, 0, 0, 81, 0, 0, 0, 0, 4, 9, 94
+"f:\毕业设计\TeachingManagement_font-end_umi\src\models\setting.ts", "TypeScript", 0, 0, 0, 0, 0, 33, 0, 0, 0, 0, 0, 5, 38
+"f:\毕业设计\TeachingManagement_font-end_umi\src\models\user.ts", "TypeScript", 0, 0, 0, 0, 0, 81, 0, 0, 0, 0, 0, 10, 91
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\404.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 3, 19
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\Admin.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 30, 0, 0, 2, 32
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\Authorized.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 33, 0, 0, 4, 37
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\Welcome.less", "Less", 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 2, 9
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\Welcome.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 60, 0, 0, 3, 63
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\Center.less", "Less", 0, 0, 0, 0, 0, 0, 74, 0, 0, 0, 0, 13, 87
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\components\ArticleListContent\index.less", "Less", 0, 0, 0, 0, 0, 0, 36, 0, 0, 0, 0, 3, 39
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\components\ArticleListContent\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 29, 0, 0, 3, 32
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\components\Articles\index.less", "Less", 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 2, 13
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\components\Articles\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 78, 0, 14, 8, 100
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\components\AvatarList\index.less", "Less", 0, 0, 0, 0, 0, 0, 44, 0, 0, 0, 0, 7, 51
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\components\AvatarList\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 72, 0, 0, 14, 86
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\components\Projects\index.less", "Less", 0, 0, 0, 0, 0, 0, 58, 0, 0, 0, 0, 6, 64
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\components\Projects\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 47, 0, 0, 4, 51
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\data.d.ts", "TypeScript", 0, 0, 0, 0, 0, 80, 0, 0, 0, 0, 0, 7, 87
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 226, 0, 4, 16, 246
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\model.ts", "TypeScript", 0, 0, 0, 0, 0, 98, 0, 0, 0, 0, 1, 8, 107
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\center\service.ts", "TypeScript", 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 4, 14
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\components\BaseView.less", "Less", 0, 0, 0, 0, 0, 0, 53, 0, 0, 0, 0, 6, 59
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\components\base.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 179, 0, 0, 11, 190
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\components\binding.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 45, 0, 0, 4, 49
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\components\notification.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 42, 0, 0, 5, 47
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\components\security.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 59, 0, 0, 5, 64
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\data.d.ts", "TypeScript", 0, 0, 0, 0, 0, 32, 0, 0, 0, 0, 0, 3, 35
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 164, 0, 0, 24, 188
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\model.ts", "TypeScript", 0, 0, 0, 0, 0, 57, 0, 0, 0, 0, 0, 8, 65
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\service.ts", "TypeScript", 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 0, 4, 22
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\account\settings\style.less", "Less", 0, 0, 0, 0, 0, 0, 92, 0, 0, 0, 2, 4, 98
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\group\data.d.ts", "TypeScript", 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 3, 15
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\group\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 93, 0, 1, 7, 101
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\group\model.ts", "TypeScript", 0, 0, 0, 0, 0, 67, 0, 0, 0, 0, 0, 8, 75
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\group\service.ts", "TypeScript", 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 1, 3, 14
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\group\style.less", "Less", 0, 0, 0, 0, 0, 0, 189, 0, 0, 0, 0, 11, 200
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\project\components\OperationModal.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 124, 0, 1, 9, 134
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\project\data.d.ts", "TypeScript", 0, 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 2, 19
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\project\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 206, 0, 1, 18, 225
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\project\model.ts", "TypeScript", 0, 0, 0, 0, 0, 128, 0, 0, 0, 0, 3, 10, 141
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\project\service.ts", "TypeScript", 0, 0, 0, 0, 0, 37, 0, 0, 0, 0, 4, 7, 48
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\project\style.less", "Less", 0, 0, 0, 0, 0, 0, 186, 0, 0, 0, 0, 10, 196
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\project\utils\utils.less", "Less", 0, 0, 0, 0, 0, 0, 46, 0, 0, 0, 2, 3, 51
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\components\OperationModal.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 120, 0, 0, 11, 131
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\data.d.ts", "TypeScript", 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 2, 18
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 195, 0, 11, 19, 225
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\model.ts", "TypeScript", 0, 0, 0, 0, 0, 142, 0, 0, 0, 0, 4, 10, 156
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\overview\data.d.ts", "TypeScript", 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 3, 25
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\overview\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 108, 0, 0, 6, 114
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\overview\model.ts", "TypeScript", 0, 0, 0, 0, 0, 56, 0, 0, 0, 0, 0, 8, 64
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\overview\service.ts", "TypeScript", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 2, 6
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\overview\style.less", "Less", 0, 0, 0, 0, 0, 0, 189, 0, 0, 0, 0, 11, 200
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\service.ts", "TypeScript", 0, 0, 0, 0, 0, 36, 0, 0, 0, 0, 4, 7, 47
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\admin\task\style.less", "Less", 0, 0, 0, 0, 0, 0, 189, 0, 0, 0, 0, 11, 200
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 163, 0, 1, 8, 172
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\components\ArticleListContent\index.less", "Less", 0, 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 3, 38
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\components\ArticleListContent\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 38, 0, 0, 4, 42
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\components\StandardFormRow\index.less", "Less", 0, 0, 0, 0, 0, 0, 84, 0, 0, 0, 0, 5, 89
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\components\StandardFormRow\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 35, 0, 0, 5, 40
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\components\TagSelect\index.less", "Less", 0, 0, 0, 0, 0, 0, 32, 0, 0, 0, 0, 2, 34
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\components\TagSelect\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 160, 0, 0, 23, 183
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\data.d.ts", "TypeScript", 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 1, 20
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 165, 0, 75, 11, 251
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\model.ts", "TypeScript", 0, 0, 0, 0, 0, 57, 0, 0, 0, 0, 0, 8, 65
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\service.ts", "TypeScript", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 2, 8
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\list\style.less", "Less", 0, 0, 0, 0, 0, 0, 29, 0, 0, 0, 0, 3, 32
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\model.ts", "TypeScript", 0, 0, 0, 0, 0, 62, 0, 0, 0, 0, 0, 8, 70
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\service.ts", "TypeScript", 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 3, 13
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\article\style.less", "Less", 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 3, 13
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\_mock.ts", "TypeScript", 0, 0, 0, 0, 0, 185, 0, 0, 0, 0, 1, 12, 198
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\Bar\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 116, 0, 0, 18, 134
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\ChartCard\index.less", "Less", 0, 0, 0, 0, 0, 0, 74, 0, 0, 0, 0, 2, 76
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\ChartCard\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 91, 0, 0, 7, 98
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\Field\index.less", "Less", 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 2, 18
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\Field\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 4, 18
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\Gauge\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 171, 0, 0, 9, 180
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\MiniArea\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 121, 0, 0, 10, 131
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\MiniBar\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 45, 0, 1, 9, 55
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\MiniProgress\index.less", "Less", 0, 0, 0, 0, 0, 0, 36, 0, 0, 0, 0, 2, 38
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\MiniProgress\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 38, 0, 0, 4, 42
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\Pie\index.less", "Less", 0, 0, 0, 0, 0, 0, 92, 0, 0, 0, 0, 3, 95
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\Pie\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 270, 0, 5, 35, 310
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\TagCloud\index.less", "Less", 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\TagCloud\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 181, 0, 3, 29, 213
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\TimelineChart\index.less", "Less", 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 2, 6
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\TimelineChart\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 119, 0, 0, 14, 133
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\WaterWave\index.less", "Less", 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 2, 29
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\WaterWave\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 200, 0, 4, 33, 237
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\autoHeight.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 67, 0, 0, 13, 80
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\bizcharts.d.ts", "TypeScript", 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2, 4
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\bizcharts.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 2, 4
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\index.less", "Less", 0, 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 1, 20
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Charts\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 42, 0, 0, 4, 46
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\IntroduceRow.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 125, 0, 0, 5, 130
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\NumberInfo\index.less", "Less", 0, 0, 0, 0, 0, 0, 67, 0, 0, 0, 0, 2, 69
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\NumberInfo\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 60, 0, 0, 3, 63
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\OfflineData.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 92, 0, 0, 5, 97
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\PageLoading\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 2, 2, 11
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\ProportionSales.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 3, 66
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\SalesCard.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 136, 0, 0, 6, 142
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\TopSearch.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 156, 0, 0, 4, 160
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Trend\index.less", "Less", 0, 0, 0, 0, 0, 0, 33, 0, 0, 0, 0, 5, 38
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\components\Trend\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 39, 0, 0, 4, 43
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\data.d.ts", "TypeScript", 0, 0, 0, 0, 0, 37, 0, 0, 0, 0, 0, 6, 43
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 206, 0, 0, 22, 228
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\model.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 61, 0, 0, 9, 70
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\service.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 2, 6
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\style.less", "Less", 0, 0, 0, 0, 0, 0, 174, 0, 0, 0, 0, 15, 189
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\utils\Yuan.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 28, 0, 3, 5, 36
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\utils\utils.less", "Less", 0, 0, 0, 0, 0, 0, 46, 0, 0, 0, 2, 3, 51
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\analysis\utils\utils.ts", "TypeScript", 0, 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 12, 53
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\_mock.ts", "TypeScript", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 2, 8
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\ActiveChart\index.less", "Less", 0, 0, 0, 0, 0, 0, 49, 0, 0, 0, 0, 3, 52
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\ActiveChart\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 96, 0, 0, 12, 108
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\Gauge\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 171, 0, 0, 10, 181
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\Map\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 138, 0, 2, 11, 151
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\MiniArea\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 121, 0, 0, 10, 131
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\Pie\index.less", "Less", 0, 0, 0, 0, 0, 0, 92, 0, 0, 0, 0, 3, 95
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\Pie\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 270, 0, 6, 35, 311
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\TagCloud\index.less", "Less", 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\TagCloud\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 181, 0, 3, 28, 212
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\WaterWave\index.less", "Less", 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 2, 29
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\WaterWave\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 200, 0, 4, 33, 237
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\autoHeight.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 67, 0, 0, 13, 80
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\index.less", "Less", 0, 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 3, 28
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\components\Charts\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 3, 18
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\data.d.ts", "TypeScript", 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 1, 6
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 205, 0, 0, 6, 211
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\model.ts", "TypeScript", 0, 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 9, 49
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\service.ts", "TypeScript", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 2, 6
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\monitor\style.less", "Less", 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 4, 22
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\_mock.ts", "TypeScript", 0, 0, 0, 0, 0, 430, 0, 0, 0, 0, 1, 15, 446
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\components\EditableLinkGroup\index.less", "Less", 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 2, 17
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\components\EditableLinkGroup\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 41, 0, 0, 7, 48
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\components\Radar\autoHeight.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 67, 0, 0, 13, 80
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\components\Radar\index.less", "Less", 0, 0, 0, 0, 0, 0, 45, 0, 0, 0, 0, 2, 47
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\components\Radar\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 192, 0, 3, 25, 220
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\data.d.ts", "TypeScript", 0, 0, 0, 0, 0, 105, 0, 0, 0, 0, 0, 12, 117
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 259, 0, 0, 12, 271
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\model.ts", "TypeScript", 0, 0, 0, 0, 0, 94, 0, 0, 0, 0, 0, 5, 99
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\service.ts", "TypeScript", 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 5, 18
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\dashboard\workplace\style.less", "Less", 0, 0, 0, 0, 0, 0, 234, 0, 0, 0, 2, 15, 251
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\document.ejs", "HTML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 199, 0, 16, 215
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\resource\_mock.ts", "TypeScript", 0, 0, 0, 0, 0, 106, 0, 0, 0, 0, 1, 10, 117
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\resource\components\OperationModal.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 96, 0, 0, 10, 106
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\resource\data.d.ts", "TypeScript", 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 3, 22
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\resource\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 144, 0, 0, 15, 159
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\resource\model.ts", "TypeScript", 0, 0, 0, 0, 0, 93, 0, 0, 0, 0, 2, 10, 105
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\resource\service.ts", "TypeScript", 0, 0, 0, 0, 0, 33, 0, 0, 0, 0, 3, 7, 43
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\resource\style.less", "Less", 0, 0, 0, 0, 0, 0, 67, 0, 0, 0, 0, 11, 78
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\resource\utils\utils.less", "Less", 0, 0, 0, 0, 0, 0, 46, 0, 0, 0, 2, 3, 51
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\detail\components\studentEditor.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 58, 0, 3, 8, 69
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\detail\components\teacherEditor.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 68, 0, 0, 8, 76
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\detail\data.d.ts", "TypeScript", 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 3, 25
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\detail\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 132, 0, 2, 11, 145
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\detail\model.ts", "TypeScript", 0, 0, 0, 0, 0, 89, 0, 0, 0, 0, 0, 8, 97
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\detail\service.ts", "TypeScript", 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 4, 20
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\detail\style.less", "Less", 0, 0, 0, 0, 0, 0, 189, 0, 0, 0, 0, 11, 200
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\list\data.d.ts", "TypeScript", 0, 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 1, 18
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\list\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 128, 0, 0, 11, 139
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\list\model.ts", "TypeScript", 0, 0, 0, 0, 0, 43, 0, 0, 0, 0, 0, 9, 52
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\list\service.ts", "TypeScript", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 3, 7
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\task\list\style.less", "Less", 0, 0, 0, 0, 0, 0, 189, 0, 0, 0, 0, 11, 200
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\components\Login\LoginContext.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 4, 14
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\components\Login\LoginItem.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 153, 0, 3, 14, 170
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\components\Login\LoginSubmit.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 6, 24
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\components\Login\LoginTab.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 36, 0, 1, 9, 46
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\components\Login\index.less", "Less", 0, 0, 0, 0, 0, 0, 41, 0, 0, 0, 0, 9, 50
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\components\Login\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 110, 0, 0, 8, 118
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\components\Login\map.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 71, 0, 0, 2, 73
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 110, 0, 32, 7, 149
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\model.ts", "TypeScript", 0, 0, 0, 0, 0, 74, 0, 0, 0, 0, 1, 9, 84
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\service.ts", "TypeScript", 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 4, 20
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\style.less", "Less", 0, 0, 0, 0, 0, 0, 33, 0, 0, 0, 0, 7, 40
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\login\utils\utils.ts", "TypeScript", 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 3, 4, 22
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\register-result\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 28, 0, 0, 4, 32
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\register-result\style.less", "Less", 0, 0, 0, 0, 0, 0, 23, 0, 0, 0, 0, 1, 24
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\register\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 284, 0, 24, 27, 335
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\register\model.ts", "TypeScript", 0, 0, 0, 0, 0, 53, 0, 0, 0, 0, 0, 9, 62
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\register\service.ts", "TypeScript", 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 2, 10
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\user\register\style.less", "Less", 0, 0, 0, 0, 0, 0, 49, 0, 0, 0, 0, 12, 61
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\writing\article\index.tsx", "TypeScript React", 0, 0, 0, 0, 0, 0, 0, 0, 124, 0, 5, 8, 137
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\writing\article\model.ts", "TypeScript", 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 5, 30
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\writing\article\service.ts", "TypeScript", 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 2, 9
+"f:\毕业设计\TeachingManagement_font-end_umi\src\pages\writing\article\style.less", "Less", 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 2, 7
+"f:\毕业设计\TeachingManagement_font-end_umi\src\service-worker.js", "JavaScript", 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 29, 7, 71
+"f:\毕业设计\TeachingManagement_font-end_umi\src\services\login.ts", "TypeScript", 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 4, 20
+"f:\毕业设计\TeachingManagement_font-end_umi\src\services\user.ts", "TypeScript", 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 4, 14
+"f:\毕业设计\TeachingManagement_font-end_umi\src\typings.d.ts", "TypeScript", 0, 0, 0, 0, 0, 30, 0, 0, 0, 0, 1, 4, 35
+"f:\毕业设计\TeachingManagement_font-end_umi\src\utils\Authorized.ts", "TypeScript", 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 7, 4, 20
+"f:\毕业设计\TeachingManagement_font-end_umi\src\utils\authority.ts", "TypeScript", 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 3, 4, 32
+"f:\毕业设计\TeachingManagement_font-end_umi\src\utils\request.ts", "TypeScript", 0, 0, 0, 0, 0, 54, 0, 0, 0, 0, 16, 9, 79
+"f:\毕业设计\TeachingManagement_font-end_umi\src\utils\utils.less", "Less", 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 2, 1, 17
+"f:\毕业设计\TeachingManagement_font-end_umi\src\utils\utils.test.ts", "TypeScript", 0, 0, 0, 0, 0, 69, 0, 0, 0, 0, 0, 8, 77
+"f:\毕业设计\TeachingManagement_font-end_umi\src\utils\utils.ts", "TypeScript", 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 9, 6, 50
+"f:\毕业设计\TeachingManagement_font-end_umi\tests\PuppeteerEnvironment.js", "JavaScript", 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 4, 8, 42
+"f:\毕业设计\TeachingManagement_font-end_umi\tests\beforeTest.js", "JavaScript", 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 6, 5, 40
+"f:\毕业设计\TeachingManagement_font-end_umi\tests\getBrowser.js", "JavaScript", 0, 0, 38, 0, 0, 0, 0, 0, 0, 0, 5, 4, 47
+"f:\毕业设计\TeachingManagement_font-end_umi\tests\run-tests.js", "JavaScript", 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 8, 6, 53
+"f:\毕业设计\TeachingManagement_font-end_umi\tsconfig.json", "JSON", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 6, 0, 27
+"Total", "-", 12, 4, 196, 165, 36, 3577, 3518, 2, 9790, 199, 536, 1791, 19826

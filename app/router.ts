@@ -3,6 +3,8 @@ import { Application } from 'egg';
 export default (app: Application) => {
   const { controller, router, jwt, middleware } = app;
   const checkAdmin = middleware.admin();
+  // 验证邮件
+  router.get('/vemail', controller.user.vemail);
 
   // 用户
   router.get('/user/list', controller.user.list);

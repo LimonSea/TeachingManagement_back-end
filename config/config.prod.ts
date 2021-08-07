@@ -41,6 +41,14 @@ export default (appInfo: EggAppInfo) => {
       database: 'windhunter',
     },
   };
+  config.redis = {
+    client: {
+      port: 6379,
+      host: '127.0.0.1',
+      password: 'Liefeng123',
+      db: 0,
+    },
+  };
   config.jwt = {
     secret: 'windhunter', // 自定义 token 的加密条件字符串
   };

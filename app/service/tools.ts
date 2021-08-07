@@ -2,6 +2,7 @@ import { Service } from 'egg';
 import fs = require('fs');
 import path = require('path');
 import mkdirp = require('mkdirp');
+import nodemailer = require('nodemailer');
 import { Code } from '../util/util';
 
 export default class Tools extends Service {
@@ -24,6 +25,30 @@ export default class Tools extends Service {
       await fs.unlink(file.filepath, () => null);
     }
     return { ...Code.SUCCESS, name: name.substring(4) };
+  }
+
+  // 发送邮件
+  async sendMail(mail, subject, text, html) {
+    // 邮件相关
+    const authUser = 'limonsea@163.com';
+    const authPass = 'inkheart0';
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.163.com',
+      secureConnection: true,
+      port: 465,
+      auth: {
+        user: authUser,
+        pass: authPass,
+      },
+    });
+    const mailOptions = { from: authUser, to: mail, subject, text, html };
+    try {
+      await transporter.sendMail(mailOptions);
+      return true;
+    } catch (err) {
+      console.log(err);
+      return false;
+    }
   }
 }
 

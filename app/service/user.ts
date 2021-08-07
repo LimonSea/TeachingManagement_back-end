@@ -1,6 +1,6 @@
 import { Service } from 'egg';
 import { createHmac } from 'crypto';
-import { Code } from '../util/util';
+import { Code, MailContent, MailExpTime } from '../util/util';
 export default class User extends Service {
   // 获取全部用户
   async list() {
@@ -14,16 +14,46 @@ export default class User extends Service {
     const { ctx, app } = this;
     const { mail, mobile } = ctx.request.body;
     let { password } = ctx.request.body;
-    // 生成用户名
-    const name = `用户${mobile.substring(mobile.length - 4)}`;
-    // 默认头像
-    const avatar = 'public/avatar/normal.png';
-    // 密码 Hmac 加密存储
-    password = createHmac('md5', app.config.pwdSecret).update(password).digest('hex');
-    // 存储数据库
-    const result = await ctx.model.User.create({ name, mail, password, mobile, avatar });
-    if (result.toJSON()) return { ...Code.SUCCESS };
+    const user = await ctx.model.User.findOne({ where: { mail } });
+    if (user) return { ...Code.ERROR, msg: '注册失败，用户已存在' };
+    // 发送邮件
+    const subject = 'WindHunter 验证邮件';
+    const text = '验证邮件';
+    const html = MailContent.register(mail, `${app.config.prefix}vemail?mail=${mail}`);
+    const hasSend = await this.service.tools.sendMail(mail, subject, text, html);
+    // 邮件发送成功后，存储用户数据到redis
+    if (hasSend) {
+      // 生成用户名
+      const name = `用户${mobile.substring(mobile.length - 4)}`;
+      // 默认头像
+      const avatar = 'public/avatar/normal.png';
+      // 密码 Hmac 加密存储
+      password = createHmac('md5', app.config.pwdSecret).update(password).digest('hex');
+      app.redis.set(
+        `registerMail${mail}`,
+        JSON.stringify({ name, mail, password, mobile, avatar }),
+        'EX',
+        MailExpTime,
+      );
+      return { ...Code.SUCCESS };
+    }
     return { ...Code.ERROR };
+  }
+
+  // 验证邮件
+  async vemail() {
+    const { ctx, app } = this;
+    const { mail } = ctx.query;
+    const user = await app.redis.get(`registerMail${mail}`);
+    if (!user) return { ...Code.ERROR, msg: '验证链接已失效' };
+    // 存储数据库
+    const { name, password, mobile, avatar } = JSON.parse(user);
+    const result = await ctx.model.User.create({ name, mail, password, mobile, avatar });
+    if (result.toJSON()) {
+      await app.redis.del(`registerMail${mail}`); // 在缓存中删除
+      return { ...Code.SUCCESS, msg: '邮箱验证成功！开启你的学习之路吧！' };
+    }
+    return { ...Code.ERROR, msg: '验证链接失败，请重试' };
   }
 
   // 获取验证码
@@ -101,7 +131,8 @@ export default class User extends Service {
         id: ctx.state.user.id,
       },
     });
-    return { ...Code.SUCCESS, ...result.toJSON() };
+    if (result) return { ...Code.SUCCESS, ...result.toJSON() };
+    return { ...Code.ERROR };
   }
 
   // 获取主页的用户数据
@@ -121,7 +152,8 @@ export default class User extends Service {
       },
       where: { id },
     });
-    return { ...Code.SUCCESS, ...result.toJSON() };
+    if (result) return { ...Code.SUCCESS, ...result.toJSON() };
+    return { ...Code.ERROR };
   }
 
   // 更新
@@ -155,7 +187,8 @@ export default class User extends Service {
         id: userId,
       },
     });
-    return { ...Code.SUCCESS, data: result.projects, totalCount: result.projects.length };
+    if (result) return { ...Code.SUCCESS, data: result.projects, totalCount: result.projects.length };
+    return { ...Code.ERROR };
   }
 
   // 查看用户的所有作业
@@ -169,7 +202,8 @@ export default class User extends Service {
       limit: parseInt(count),
       offset: (currentPage - 1) * count,
     });
-    return { ...Code.SUCCESS, data: tasks, totalCount: tasks.length };
+    if (tasks) return { ...Code.SUCCESS, data: tasks, totalCount: tasks.length };
+    return { ...Code.ERROR };
   }
 
   // 查看用户的作业详情
